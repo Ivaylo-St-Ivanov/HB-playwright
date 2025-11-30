@@ -1,0 +1,54 @@
+{
+    "en": {
+        "home": {
+            "title": "Hristo Boytchev",
+            "subtitle": "Playwright",
+            "intro": "Hristo Boytchev is one of the most widely staged contemporary European playwrights. His plays have been produced in over 40 countries."
+        },
+        "navbar": {
+            "home": "Home",
+            "plays": "Plays",
+            "contact": "Contact",
+            "aboutMe": "About me",
+            "aboutLinks": {
+                "biography": "Biography",
+                "staging": "Staging",
+                "festivalsAndPrizes": "Festivals and prizes",
+                "review": "Review"
+            }
+        },
+        "footer": {
+            "copyright": "Hristo Boytchev. All rights reserved."
+        },
+        "contact": {
+            "email": "hbagency@mail.orbitel.bg",
+            "info": "For rights and inquiries, please contact the author directly."
+        }
+    },
+    "bg": {
+        "home": {
+            "title": "Христо Бойчев",
+            "subtitle": "Драматург",
+            "intro": "Христо Бойчев е един от най-поставяните съвременни европейски драматурзи. Пиесите му са играни в над 40 държави."
+        },
+        "navbar": {
+            "home": "Начало",
+            "plays": "Пиеси",
+            "contact": "Контакт",
+            "aboutMe": "За мен",
+            "aboutLinks": {
+                "biography": "Биография",
+                "staging": "Постановки",
+                "festivalsAndPrizes": "Фестивали и награди",
+                "review": "Рецензии"
+            }
+        },
+        "footer": {
+            "copyright": "Христо Бойчев. Всички права запазени."
+        },
+        "contact": {
+            "email": "hbagency@mail.orbitel.bg",
+            "info": "За права и запитвания, моля свържете се директно с автора."
+        }
+    }
+}

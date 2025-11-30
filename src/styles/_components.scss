@@ -1,0 +1,137 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Navbar
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: $spacing-sm $spacing-md;
+    background: var(--color-transparent);
+    opacity: 0.8;
+    backdrop-filter: blur(0.25rem);
+    z-index: 1000;
+    border-bottom: 1px solid;
+    border-color: var(--color-border);
+    transition: background-color $transition-normal;
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &:has(.navbar__logo) {
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        font-family: $font-heading;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $color-text;
+        letter-spacing: 1px;
+    }
+
+    &__links {
+        display: flex;
+        gap: $spacing-md;
+        align-items: center;
+
+        @include mobile {
+            display: none; // TODO: Mobile menu
+        }
+    }
+
+    &__link {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: 0.8;
+        transition: opacity $transition-fast, color $transition-fast, transform $transition-fast;
+
+        &:hover,
+        &--active {
+            opacity: 1;
+            color: $color-accent;
+        }
+
+        &--dropdown {
+            display: block;
+
+            &:hover {
+                transform: translateX(5px);
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: $spacing-xs;
+    background: var(--color-transparent);
+    opacity: 0.8;
+    backdrop-filter: blur(0.25rem);
+    text-align: center;
+    font-size: 0.8rem;
+    color: $color-secondary;
+    border-top: 1px solid;
+    border-color: var(--color-border);
+}
+
+// Hero
+.hero {
+    flex: 1;
+    width: 100%;
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    padding: calc(80px + $spacing-lg) $spacing-md $spacing-lg;
+    background-color: var(--color-bg);
+    background-image: url('../assets/musical_staff_background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-bg);
+        opacity: 0.7;
+        z-index: 0;
+        // transition: none;
+    }
+
+    &>* {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        font-size: 4rem;
+        margin-bottom: $spacing-sm;
+
+        @include mobile {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        color: $color-accent;
+        margin-bottom: $spacing-md;
+        font-family: $font-body;
+        font-weight: 300;
+    }
+}

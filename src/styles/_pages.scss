@@ -1,0 +1,78 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Plays Page
+.plays-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: $spacing-md;
+    padding: $spacing-md 0;
+}
+
+.play-card {
+    background: $color-surface;
+    padding: $spacing-md;
+    border-radius: 8px;
+    transition: transform $transition-fast;
+    border: 1px solid rgba($color-text, 0.05);
+
+    &:hover {
+        transform: translateY(-5px);
+        border-color: $color-accent;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        margin-bottom: $spacing-xs;
+        color: $color-accent;
+    }
+
+    &__meta {
+        font-size: 0.9rem;
+        color: $color-secondary;
+        margin-bottom: $spacing-sm;
+    }
+
+    &__desc {
+        font-size: 0.95rem;
+        margin-bottom: $spacing-md;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $color-text;
+        border-bottom: 1px solid $color-accent;
+        padding-bottom: 2px;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}
+
+// Contact Page
+.contact-page {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: $spacing-xl 0;
+
+    &__email {
+        font-size: 2rem;
+        color: $color-accent;
+        margin: $spacing-md 0;
+        word-break: break-all;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+}

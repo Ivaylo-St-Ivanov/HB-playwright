@@ -1,0 +1,22 @@
+// Typography
+$font-heading: 'Playfair Display', serif;
+$font-body: 'Inter', sans-serif;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xl: 8rem;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.4s ease;
+
+// Colors (Mapped to CSS Variables)
+$color-bg: var(--color-bg);
+$color-text: var(--color-text);
+$color-accent: var(--color-accent);
+$color-secondary: var(--color-secondary);
+$color-surface: var(--color-surface);
+$color-border: var(--color-border);

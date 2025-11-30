@@ -1,0 +1,70 @@
+[
+  {
+    "id": "colonel-bird",
+    "title": {
+      "en": "The Colonel Bird",
+      "bg": "Полковникът птица"
+    },
+    "year": 1997,
+    "genre": {
+      "en": "Satire / Absurdist Drama",
+      "bg": "Сатира / Абсурдистка драма"
+    },
+    "description": {
+      "en": "A group of psychiatric patients find a UN humanitarian drop containing military uniforms and form a small army unit under the command of a mute colonel.",
+      "bg": "Група психиатрични пациенти намират хуманитарна пратка на ООН, съдържаща военни униформи, и сформират малка армейска част под командването на ням полковник."
+    },
+    "languages": [
+      "English",
+      "French",
+      "German",
+      "Russian",
+      "Spanish",
+      "Italian"
+    ],
+    "downloadUrl": "/assets/docs/colonel_bird.doc"
+  },
+  {
+    "id": "district-hospital",
+    "title": {
+      "en": "District Hospital",
+      "bg": "Районна болница"
+    },
+    "year": 1999,
+    "genre": {
+      "en": "Dark Comedy",
+      "bg": "Черна комедия"
+    },
+    "description": {
+      "en": "A chaotic look into a hospital where the staff is as confused as the patients.",
+      "bg": "Хаотичен поглед към болница, където персоналът е също толкова объркан, колкото и пациентите."
+    },
+    "languages": [
+      "English",
+      "German",
+      "Russian"
+    ],
+    "downloadUrl": "/assets/docs/district_hospital.doc"
+  },
+  {
+    "id": "underground",
+    "title": {
+      "en": "Underground",
+      "bg": "Подземието"
+    },
+    "year": 2006,
+    "genre": {
+      "en": "Apocalyptic Drama",
+      "bg": "Апокалиптична драма"
+    },
+    "description": {
+      "en": "People living underground after a catastrophe, trying to maintain their humanity.",
+      "bg": "Хора, живеещи под земята след катастрофа, опитващи се да запазят своята човечност."
+    },
+    "languages": [
+      "English",
+      "French"
+    ],
+    "downloadUrl": "/assets/docs/underground.doc"
+  }
+]
