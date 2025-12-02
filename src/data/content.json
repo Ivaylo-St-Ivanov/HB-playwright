@@ -6,6 +6,7 @@
             "intro": "Hristo Boytchev is one of the most widely staged contemporary European playwrights. His plays have been produced in over 40 countries."
         },
         "navbar": {
+            "logo": "Hristo Boytchev",
             "home": "Home",
             "plays": "Plays",
             "contact": "Contact",
@@ -23,6 +24,64 @@
         "contact": {
             "email": "hbagency@mail.orbitel.bg",
             "info": "For rights and inquiries, please contact the author directly."
+        },
+        "biography": {
+            "title": "Biography",
+            "events": [
+                {
+                    "year": "1950",
+                    "text": "Born in Northern Bulgaria"
+                },
+                {
+                    "year": "1974",
+                    "text": "Graduated from The Higher Institute of Engineering, Rousse, Bulgaria, majoring machine engineering"
+                },
+                {
+                    "year": "1976 - 1985",
+                    "text": "Works as a technical manager and a manager of a factory"
+                },
+                {
+                    "year": "1984",
+                    "text": "Premiere of his first play \"That Thing\""
+                },
+                {
+                    "year": "1985 - 1989",
+                    "text": "Studies drama in the National Academy for Theatrical and Film Art"
+                },
+                {
+                    "year": "1989",
+                    "text": "Named Playwright of the Year with 40 productions of his plays on the theatrical stages throughout Bulgaria."
+                },
+                {
+                    "year": "1990",
+                    "text": "Premiere of the first film based on his screenplay \"That Thing\". Began participating on a regular basis as a political satirist in one of the most famous TV shows in Bulgaria."
+                },
+                {
+                    "year": "1996",
+                    "text": "Won the state subsidy for shooting the film \"The Colonel Bird\" after his script. An author and a host in his own TV show. Ran for President of the Republic of Bulgaria. The allotted TV time was used for a mocking political happening (30 successive days in prime time). Won approximately 2% of the votes."
+                },
+                {
+                    "year": "1997",
+                    "text": "Awarded the British Council International Playwriting Awards for Best Play in the Intentional Playwriting Competition for the play \"The Colonel Bird\". The play was selected from a pool of 400 plays from all over the world. The prize was bestowed on him in the Royal National Theatre in London by Harold Pinter. As of now the play has been staged more than 100 times in more then 30 countries worldwide."
+                },
+                {
+                    "year": "1999",
+                    "text": "FESTIVAL D'AVIGNON, \"The Colonel Bird\" was presented in the program of the festival with 15 performances by \"Theatre de la Commune d'Aubervilliers\", Paris. Awarded the prestigious Italian theatre award Premio \"Enrico Maria Salerno\" per la drammaturgia Europea, 5 Edizione."
+                },
+                {
+                    "year": "2000",
+                    "text": "BONNER BIENNALE - 2000 - \"The Colonel Bird\" was presented in the program of the festival by the \"Pleven\" theatre. Godfather of \"Festival for New European Play- Wiesbaden Biennale\" since 2000."
+                },
+                {
+                    "year": "2006",
+                    "text": "President of the \"Association of The Bulgarian Playwrights\"."
+                },
+                {
+                    "year": "2009",
+                    "text": "\"GOLDEN MASK\" - Moscow - \"The Colonel Bird\" was presented at the most prestigious Russian festival by Samara Academic Drama Theatre."
+                }
+            ],
+            "additionalInfo": "Hristo Boytchev's plays have been staged in more than 40 countries on the five continents. His latest plays are \"The Colonel and The Birds\" - a female version of \"The Colonel Bird\", \"The Titanic Orchestra\", \"District Hospital\", the monodrama \"Phenomena\" and \"Igloo\". He obtained a Copyright from Εκδόσεις Καζαντζάκη to write a play \"Zorba The Greek\" on the famous N. Kazantzakis novel and \"The Great Gatsby\" as well."
         }
     },
     "bg": {
@@ -32,6 +91,7 @@
             "intro": "Христо Бойчев е един от най-поставяните съвременни европейски драматурзи. Пиесите му са играни в над 40 държави."
         },
         "navbar": {
+            "logo": "Христо Бойчев",
             "home": "Начало",
             "plays": "Пиеси",
             "contact": "Контакт",
@@ -49,6 +109,64 @@
         "contact": {
             "email": "hbagency@mail.orbitel.bg",
             "info": "За права и запитвания, моля свържете се директно с автора."
+        },
+        "biography": {
+            "title": "Биография",
+            "events": [
+                {
+                    "year": "1950",
+                    "text": "Роден в Северна България"
+                },
+                {
+                    "year": "1974",
+                    "text": "Завършва Висш инженерно-строителен институт, Русе, България, специалност машинно инженерство"
+                },
+                {
+                    "year": "1976 - 1985",
+                    "text": "Работи като технически ръководител и директор на завод"
+                },
+                {
+                    "year": "1984",
+                    "text": "Премиера на първата му пиеса \"Онова нещо\""
+                },
+                {
+                    "year": "1985 - 1989",
+                    "text": "Следва драматургия в Националната академия за театрално и филмово изкуство"
+                },
+                {
+                    "year": "1989",
+                    "text": "Обявен за Драматург на годината с 40 постановки на пиесите му на театралните сцени в цяла България."
+                },
+                {
+                    "year": "1990",
+                    "text": "Премиера на първия филм по негов сценарий \"Онова нещо\". Започва редовно участие като политически сатирик в едно от най-известните телевизионни предавания в България."
+                },
+                {
+                    "year": "1996",
+                    "text": "Печели държавна субсидия за заснемане на филма \"Полковник птица\" по негов сценарий. Автор и водещ на собствено телевизионно предаване. Кандидатира се за президент на Република България. Отпуснатото телевизионно време е използвано за подигравателен политически хепънинг (30 последователни дни в прайм тайм). Печели приблизително 2% от гласовете."
+                },
+                {
+                    "year": "1997",
+                    "text": "Награден с наградата на Британския съвет за международна драматургия за най-добра пиеса в международния конкурс за драматургия за пиесата \"Полковник птица\". Пиесата е избрана измежду 400 пиеси от целия свят. Наградата му е връчена в Кралския национален театър в Лондон от Харолд Пинтър. Към момента пиесата е поставена повече от 100 пъти в повече от 30 страни по света."
+                },
+                {
+                    "year": "1999",
+                    "text": "ФЕСТИВАЛ Д'АВИНЬОН, \"Полковник птица\" е представена в програмата на фестивала с 15 представления от \"Театър дьо ла Комюн д'Обервилие\", Париж. Награден с престижната италианска театрална награда Premio \"Enrico Maria Salerno\" per la drammaturgia Europea, 5 Edizione."
+                },
+                {
+                    "year": "2000",
+                    "text": "БОНЕР БИЕНАЛЕ - 2000 - \"Полковник птица\" е представена в програмата на фестивала от театър \"Плевен\". Кръстник на \"Фестивал за нова европейска драма - Висбаден Биенале\" от 2000 г."
+                },
+                {
+                    "year": "2006",
+                    "text": "Председател на \"Сдружението на българските драматурзи\"."
+                },
+                {
+                    "year": "2009",
+                    "text": "\"ЗЛАТНА МАСКА\" - Москва - \"Полковник птица\" е представена на най-престижния руски фестивал от Самарски академичен драматичен театър."
+                }
+            ],
+            "additionalInfo": "Пиесите на Христо Бойчев са поставяни в повече от 40 страни на петте континента. Последните му пиеси са \"Полковник и птиците\" - женска версия на \"Полковник птица\", \"Оркестърът на Титаник\", \"Окръжна болница\", монодрамата \"Феномена\" и \"Иглу\". Той получи авторски права от Εκδόσεις Καζαντζάκη да напише пиеса \"Грък Зорба\" по известния роман на Н. Казандзакис, както и \"Великият Гетсби\"."
         }
     }
 }

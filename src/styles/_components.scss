@@ -8,8 +8,6 @@
     left: 0;
     width: 100%;
     padding: $spacing-sm $spacing-md;
-    background: var(--color-transparent);
-    opacity: 0.8;
     backdrop-filter: blur(0.25rem);
     z-index: 1000;
     border-bottom: 1px solid;
@@ -75,8 +73,6 @@
     left: 0;
     width: 100%;
     padding: $spacing-xs;
-    background: var(--color-transparent);
-    opacity: 0.8;
     backdrop-filter: blur(0.25rem);
     text-align: center;
     font-size: 0.8rem;

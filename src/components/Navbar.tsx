@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
             <div className="navbar__container">
                 {location.pathname !== '/' && (
                     <Link to="/" className="navbar__logo">
-                        Hristo Boytchev
+                        {content.navbar.logo}
                     </Link>
                 )}
 
