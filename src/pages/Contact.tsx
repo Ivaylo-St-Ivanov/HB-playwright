@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
 
+import hbLogo from '../assets/hb_logo.png';
+
 const Contact: React.FC = () => {
     const { content } = useLanguage();
 
@@ -14,7 +16,8 @@ const Contact: React.FC = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
             >
-                <h1>{content.navbar.contact}</h1>
+                <img src={hbLogo} alt="Hristo Boytchev Logo" className="contact-page__logo" />
+                <h1 style={{ opacity: '0' }}>{content.navbar.contact}</h1>
                 <p style={{ marginTop: '1rem' }}>{content.contact.info}</p>
                 <div className="contact-page__email">
                     <a href={`mailto:${content.contact.email}`}>{content.contact.email}</a>

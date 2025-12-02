@@ -63,7 +63,21 @@
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    padding: $spacing-xl 0;
+    padding: $spacing-lg 0;
+
+    &__logo {
+        width: 150px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--color-contact-logo);
+        border-radius: 50%;
+
+        @include mobile {
+            width: 120px;
+        }
+    }
 
     &__email {
         font-size: 2rem;
