@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
 
 const BgFlag = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="24" height="15">
-        <rect fill="#fff" width="640" height="480" />
-        <rect fill="#00966e" y="160" width="640" height="160" />
-        <rect fill="#d62612" y="320" width="640" height="160" />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 480" width="24" height="16">
+        <rect fill="#fff" width="750" height="480" />
+        <rect fill="#00966e" y="160" width="750" height="160" />
+        <rect fill="#d62612" y="320" width="750" height="160" />
     </svg>
 );
 
 const UkFlag = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="24" height="12">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="24" height="16">
         <clipPath id="t">
             <path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z" />
         </clipPath>
@@ -24,40 +24,120 @@ const UkFlag = () => (
     </svg>
 );
 
+const EsFlag = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="24" height="16">
+        <rect width="750" height="500" fill="#c60b1e" />
+        <rect width="750" height="250" y="125" fill="#ffc400" />
+    </svg>
+);
+
 const LanguageSwitcher: React.FC = () => {
-    const [isHovered, setIsHovered] = useState(false);
-    const { language, toggleLanguage } = useLanguage();
+    const [isOpen, setIsOpen] = useState(false);
+    const { language, setLanguage } = useLanguage();
+
+    const languages = [
+        { code: 'en', label: 'EN', Flag: UkFlag },
+        { code: 'bg', label: 'BG', Flag: BgFlag },
+        { code: 'es', label: 'ES', Flag: EsFlag },
+    ] as const;
+
+    const currentLang = languages.find(l => l.code === language) || languages[0];
 
     return (
-        <motion.button
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            onClick={toggleLanguage}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="language-switcher"
+        <div
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
             style={{
-                background: 'transparent',
-                border: '1px solid currentColor',
-                color: 'inherit',
-                // padding: 0, // Remove padding as we use fixed dimensions
-                cursor: 'pointer',
-                borderRadius: '4px',
-                fontFamily: 'inherit',
-                fontSize: '0.9rem',
+                position: 'relative',
                 marginLeft: '1rem',
-                width: '2.5rem', // Fixed width
-                height: '1.5rem', // Fixed height
+                zIndex: 50,
+                height: '100%',
                 display: 'flex',
-                justifyContent: 'center',
                 alignItems: 'center'
             }}
         >
-            {isHovered
-                ? (language === 'en' ? <BgFlag /> : <UkFlag />)
-                : (language === 'en' ? 'BG' : 'EN')
-            }
-        </motion.button>
+            <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="language-switcher"
+                style={{
+                    background: 'transparent',
+                    border: '1px solid currentColor',
+                    color: 'inherit',
+                    cursor: 'pointer',
+                    borderRadius: '4px',
+                    fontFamily: 'inherit',
+                    fontSize: '0.9rem',
+                    width: '3.5rem',
+                    height: '1.8rem',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    gap: '0.4rem'
+                }}
+            >
+                <currentLang.Flag />
+                <span>{currentLang.label}</span>
+            </motion.button>
+
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        style={{
+                            position: 'absolute',
+                            top: '100%',
+                            right: 0,
+                            background: 'var(--color-bg)',
+                            border: '1px solid var(--color-border)',
+                            borderRadius: '4px',
+                            padding: '0.5rem',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '0.5rem',
+                            boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+                            minWidth: '120px',
+                            marginTop: '0.5rem'
+                        }}
+                    >
+                        {languages.map((lang) => (
+                            <motion.button
+                                key={lang.code}
+                                className="navbar__dropdown-item"
+                                onClick={() => {
+                                    setLanguage(lang.code as any);
+                                    setIsOpen(false);
+                                }}
+                                whileHover={{
+                                    scale: 1.04,
+                                    backgroundColor: 'rgba(128, 128, 128, 0.1)'
+                                }}
+                                style={{
+                                    background: 'transparent',
+                                    border: 'none',
+                                    // color: 'var(--color-text)', // Handled by CSS
+                                    cursor: 'pointer',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '0.8rem',
+                                    padding: '0.4rem 0.6rem',
+                                    borderRadius: '4px',
+                                    width: '100%',
+                                    textAlign: 'left',
+                                    fontSize: '0.9rem'
+                                }}
+                            >
+                                <lang.Flag />
+                                <span>{lang.label}</span>
+                            </motion.button>
+                        ))}
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </div>
     );
 };
 

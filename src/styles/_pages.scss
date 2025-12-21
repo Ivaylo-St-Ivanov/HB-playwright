@@ -120,12 +120,11 @@
             height: auto;
             border-radius: 4px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            filter: grayscale(100%);
-            transition: filter $transition-normal, transform $transition-normal;
+            transition: transform $transition-normal;
 
             &:hover {
-                filter: grayscale(0%);
                 transform: scale(1.05);
+                cursor: none;
             }
         }
     }

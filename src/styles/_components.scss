@@ -64,6 +64,15 @@
             }
         }
     }
+
+    &__dropdown-item {
+        color: $color-text;
+        transition: color $transition-fast;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
 }
 
 // Footer

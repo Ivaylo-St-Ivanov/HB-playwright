@@ -168,5 +168,90 @@
             ],
             "additionalInfo": "Пиесите на Христо Бойчев са поставяни в повече от 40 страни на петте континента. Последните му пиеси са \"Полковник и птиците\" - женска версия на \"Полковник птица\", \"Оркестърът на Титаник\", \"Окръжна болница\", монодрамата \"Феномена\" и \"Иглу\". Той получи авторски права от Εκδόσεις Καζαντζάκη да напише пиеса \"Грък Зорба\" по известния роман на Н. Казандзакис, както и \"Великият Гетсби\"."
         }
+    },
+    "es": {
+        "home": {
+            "title": "Hristo Boytchev",
+            "subtitle": "Dramaturgo",
+            "intro": "Hristo Boytchev es uno de los dramaturgos europeos contemporáneos más representados. Sus obras se han producido en más de 40 países."
+        },
+        "navbar": {
+            "logo": "Hristo Boytchev",
+            "home": "Inicio",
+            "plays": "Obras",
+            "contact": "Contacto",
+            "aboutMe": "Sobre mí",
+            "aboutLinks": {
+                "biography": "Biografía",
+                "staging": "Puesta en escena",
+                "festivalsAndPrizes": "Festivales y premios",
+                "review": "Reseñas"
+            }
+        },
+        "footer": {
+            "copyright": "Hristo Boytchev. Todos los derechos reservados."
+        },
+        "contact": {
+            "email": "hbagency@mail.orbitel.bg",
+            "info": "Para derechos y consultas, por favor contacte al autor directamente."
+        },
+        "biography": {
+            "title": "Biografía",
+            "events": [
+                {
+                    "year": "1950",
+                    "text": "Nacido en el norte de Bulgaria"
+                },
+                {
+                    "year": "1974",
+                    "text": "Graduado del Instituto Superior de Ingeniería, Ruse, Bulgaria, especializándose en ingeniería mecánica"
+                },
+                {
+                    "year": "1976 - 1985",
+                    "text": "Trabaja como gerente técnico y gerente de una fábrica"
+                },
+                {
+                    "year": "1984",
+                    "text": "Estreno de su primera obra \"Esa Cosa\""
+                },
+                {
+                    "year": "1985 - 1989",
+                    "text": "Estudia teatro en la Academia Nacional de Arte Teatral y Cinematográfico"
+                },
+                {
+                    "year": "1989",
+                    "text": "Nombrado Dramaturgo del Año con 40 producciones de sus obras en los escenarios teatrales de toda Bulgaria."
+                },
+                {
+                    "year": "1990",
+                    "text": "Estreno de la primera película basada en su guion \"Esa Cosa\". Comienza a participar regularmente como satírico político en uno de los programas de televisión más famosos de Bulgaria."
+                },
+                {
+                    "year": "1996",
+                    "text": "Ganó el subsidio estatal para rodar la película \"El Coronel Pájaro\" basada en su guion. Autor y presentador de su propio programa de televisión. Se postuló para Presidente de la República de Bulgaria. El tiempo de televisión asignado se utilizó para un happening político burlón (30 días sucesivos en horario estelar). Ganó aproximadamente el 2% de los votos."
+                },
+                {
+                    "year": "1997",
+                    "text": "Galardonado con el Premio Internacional de Dramaturgia del British Council a la Mejor Obra en el Concurso Internacional de Dramaturgia por la obra \"El Coronel Pájaro\". La obra fue seleccionada de un grupo de 400 obras de todo el mundo. El premio le fue otorgado en el Royal National Theatre de Londres por Harold Pinter. Hasta ahora, la obra se ha representado más de 100 veces en más de 30 países de todo el mundo."
+                },
+                {
+                    "year": "1999",
+                    "text": "FESTIVAL D'AVIGNON, \"El Coronel Pájaro\" se presentó en el programa del festival con 15 funciones por \"Theatre de la Commune d'Aubervilliers\", París. Galardonado con el prestigioso premio de teatro italiano Premio \"Enrico Maria Salerno\" per la drammaturgia Europea, 5 Edizione."
+                },
+                {
+                    "year": "2000",
+                    "text": "BONNER BIENNALE - 2000 - \"El Coronel Pájaro\" se presentó en el programa del festival por el teatro \"Pleven\". Padrino del \"Festival de Nueva Dramaturgia Europea - Wiesbaden Biennale\" desde 2000."
+                },
+                {
+                    "year": "2006",
+                    "text": "Presidente de la \"Asociación de Dramaturgos Búlgaros\"."
+                },
+                {
+                    "year": "2009",
+                    "text": "\"MÁSCARA DE ORO\" - Moscú - \"El Coronel Pájaro\" fue presentada en el festival ruso más prestigioso por el Teatro Dramático Académico de Samara."
+                }
+            ],
+            "additionalInfo": "Las obras de Hristo Boytchev se han representado en más de 40 países en los cinco continentes. Sus últimas obras son \"El Coronel y las Aves\" - una versión femenina de \"El Coronel Pájaro\", \"La Orquesta del Titanic\", \"Hospital de Distrito\", el monodrama \"Fenómenos\" e \"Iglú\". Obtuvo los derechos de autor de Εκδόσεις Καζαντζάκη para escribir una obra \"Zorba el Griego\" sobre la famosa novela de N. Kazantzakis y \"El Gran Gatsby\" también."
+        }
     }
 }

@@ -2,11 +2,11 @@ import React, { createContext, useContext, useState, type ReactNode } from 'reac
 
 import contentData from '../data/content.json';
 
-type Language = 'en' | 'bg';
+type Language = 'en' | 'bg' | 'es';
 
 interface LanguageContextType {
     language: Language;
-    toggleLanguage: () => void;
+    setLanguage: (lang: Language) => void;
     content: typeof contentData['en'];
 }
 
@@ -15,14 +15,10 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [language, setLanguage] = useState<Language>('en');
 
-    const toggleLanguage = () => {
-        setLanguage((prev) => (prev === 'en' ? 'bg' : 'en'));
-    };
-
     const content = contentData[language];
 
     return (
-        <LanguageContext.Provider value={{ language, toggleLanguage, content }}>
+        <LanguageContext.Provider value={{ language, setLanguage, content }}>
             {children}
         </LanguageContext.Provider>
     );
