@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
                     <Link to="/plays" className={`navbar__link ${isActive('/plays')}`}>{content.navbar.plays}</Link>
                     <Link to="/contact" className={`navbar__link ${isActive('/contact')}`}>{content.navbar.contact}</Link>
 
-                    <ThemeToggle />
+                    {location.pathname !== '/' && <ThemeToggle />}
                     <LanguageSwitcher />
                 </div>
             </div>
