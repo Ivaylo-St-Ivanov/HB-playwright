@@ -31,6 +31,14 @@ const EsFlag = () => (
     </svg>
 );
 
+const DeFlag = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" width="24" height="16">
+        <rect width="5" height="3" y="0" x="0" fill="#000" />
+        <rect width="5" height="2" y="1" x="0" fill="#d00" />
+        <rect width="5" height="1" y="2" x="0" fill="#ffce00" />
+    </svg>
+);
+
 const LanguageSwitcher: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const { language, setLanguage } = useLanguage();
@@ -39,6 +47,7 @@ const LanguageSwitcher: React.FC = () => {
         { code: 'en', label: 'EN', Flag: UkFlag },
         { code: 'bg', label: 'BG', Flag: BgFlag },
         { code: 'es', label: 'ES', Flag: EsFlag },
+        { code: 'de', label: 'DE', Flag: DeFlag },
     ] as const;
 
     const currentLang = languages.find(l => l.code === language) || languages[0];

@@ -22,7 +22,7 @@
             "copyright": "Hristo Boytchev. All rights reserved."
         },
         "contact": {
-            "email": "hbagency@mail.orbitel.bg",
+            "email": "hbagency@gmail.com",
             "info": "For rights and inquiries, please contact the author directly."
         },
         "biography": {
@@ -82,6 +82,100 @@
                 }
             ],
             "additionalInfo": "Hristo Boytchev's plays have been staged in more than 40 countries on the five continents. His latest plays are \"The Colonel and The Birds\" - a female version of \"The Colonel Bird\", \"The Titanic Orchestra\", \"District Hospital\", the monodrama \"Phenomena\" and \"Igloo\". He obtained a Copyright from Εκδόσεις Καζαντζάκη to write a play \"Zorba The Greek\" on the famous N. Kazantzakis novel and \"The Great Gatsby\" as well."
+        },
+        "staging": {
+            "title": "Staging",
+            "premiere": "Premiere",
+            "director": "Director",
+            "actors": "Actors",
+            "items": [
+                {
+                    "id": "armenia-yerevan-colonel-bird",
+                    "country": "Armenia",
+                    "city": "Yerevan",
+                    "play": "The Colonel Bird",
+                    "theater": "Theatre Hrachia Kaplanyan",
+                    "premiere": "",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                },
+                {
+                    "id": "australia-sydney-titanic-orchestra",
+                    "country": "Australia",
+                    "city": "Sydney",
+                    "play": "The Titanic Orchestra",
+                    "theater": "The New Theatre",
+                    "premiere": "16 March, 2006",
+                    "director": "Peter Talmacs",
+                    "actors": "John Farndale, Alan Faulkner, Kim Knuckey, Jill McKay and Frank McNamara",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/Sidney.gif"
+                    ]
+                },
+                {
+                    "id": "bulgaria-sofia-colonel-bird",
+                    "country": "Bulgaria",
+                    "city": "Sofia",
+                    "play": "The Colonel & The Bird",
+                    "theater": "Theatre Sofia",
+                    "premiere": "14 May, 2000",
+                    "director": "Boris Pankin",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/sofialit.gif",
+                        "http://www.hristoboytchev.com/images/snimki/sofia.jpg"
+                    ]
+                },
+                {
+                    "id": "bulgaria-sofia-titanic-orchestra",
+                    "country": "Bulgaria",
+                    "city": "Sofia",
+                    "play": "The Titanic Orchestra",
+                    "theater": "National Youth Theatre",
+                    "premiere": "14 May, 2002",
+                    "director": "Plamen Panev",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/sofia2.jpg"
+                    ]
+                },
+                {
+                    "id": "bulgaria-rouse-titanic-orchestra",
+                    "country": "Bulgaria",
+                    "city": "Rousse",
+                    "play": "The Titanic Orchestra",
+                    "theater": "National Drama Theatre",
+                    "premiere": "2007",
+                    "director": "Plamen Panev",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/Ruse.jpg"
+                    ]
+                },
+                {
+                    "id": "france-paris-colonel-bird",
+                    "country": "France",
+                    "city": "Paris",
+                    "play": "The Colonel Bird",
+                    "theater": "Theatre de la Commune d'Aubervilliers",
+                    "premiere": "1999",
+                    "director": "Unknown",
+                    "actors": "Unknown",
+                    "images": []
+                },
+                {
+                    "id": "russia-samara-colonel-bird",
+                    "country": "Russia",
+                    "city": "Samara",
+                    "play": "The Colonel Bird",
+                    "theater": "Samara Academic Drama Theatre",
+                    "premiere": "2009",
+                    "director": "Unknown",
+                    "actors": "Unknown",
+                    "images": []
+                }
+            ]
         }
     },
     "bg": {
@@ -107,7 +201,7 @@
             "copyright": "Христо Бойчев. Всички права запазени."
         },
         "contact": {
-            "email": "hbagency@mail.orbitel.bg",
+            "email": "hbagency@gmail.com",
             "info": "За права и запитвания, моля свържете се директно с автора."
         },
         "biography": {
@@ -167,6 +261,100 @@
                 }
             ],
             "additionalInfo": "Пиесите на Христо Бойчев са поставяни в повече от 40 страни на петте континента. Последните му пиеси са \"Полковник и птиците\" - женска версия на \"Полковник птица\", \"Оркестърът на Титаник\", \"Окръжна болница\", монодрамата \"Феномена\" и \"Иглу\". Той получи авторски права от Εκδόσεις Καζαντζάκη да напише пиеса \"Грък Зорба\" по известния роман на Н. Казандзакис, както и \"Великият Гетсби\"."
+        },
+        "staging": {
+            "title": "Постановки",
+            "premiere": "Премиера",
+            "director": "Режисьор",
+            "actors": "Актьори",
+            "items": [
+                {
+                    "id": "armenia-yerevan-colonel-bird",
+                    "country": "Армения",
+                    "city": "Ереван",
+                    "play": "Полковник птица",
+                    "theater": "Theatre Hrachia Kaplanyan",
+                    "premiere": "",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                },
+                {
+                    "id": "australia-sydney-titanic-orchestra",
+                    "country": "Австралия",
+                    "city": "Сидней",
+                    "play": "Оркестърът на Титаник",
+                    "theater": "The New Theatre",
+                    "premiere": "16 март 2006",
+                    "director": "Peter Talmacs",
+                    "actors": "John Farndale, Alan Faulkner, Kim Knuckey, Jill McKay and Frank McNamara",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/Sidney.gif"
+                    ]
+                },
+                {
+                    "id": "bulgaria-sofia-colonel-bird",
+                    "country": "България",
+                    "city": "София",
+                    "play": "Полковникът и птицата",
+                    "theater": "Theatre Sofia",
+                    "premiere": "14 май 2000",
+                    "director": "Boris Pankin",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/sofialit.gif",
+                        "http://www.hristoboytchev.com/images/snimki/sofia.jpg"
+                    ]
+                },
+                {
+                    "id": "bulgaria-sofia-titanic-orchestra",
+                    "country": "България",
+                    "city": "София",
+                    "play": "Оркестърът на Титаник",
+                    "theater": "National Youth Theatre",
+                    "premiere": "14 май 2002",
+                    "director": "Plamen Panev",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/sofia2.jpg"
+                    ]
+                },
+                {
+                    "id": "bulgaria-rouse-titanic-orchestra",
+                    "country": "България",
+                    "city": "Русе",
+                    "play": "Оркестърът на Титаник",
+                    "theater": "Национален драматичен театър",
+                    "premiere": "2007",
+                    "director": "Пламен Панев",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/Ruse.jpg"
+                    ]
+                },
+                {
+                    "id": "france-paris-colonel-bird",
+                    "country": "Франция",
+                    "city": "Париж",
+                    "play": "Полковникът птица",
+                    "theater": "Theatre de la Commune d'Aubervilliers",
+                    "premiere": "1999",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                },
+                {
+                    "id": "russia-samara-colonel-bird",
+                    "country": "Русия",
+                    "city": "Самара",
+                    "play": "Полковникът птица",
+                    "theater": "Самарски академичен драматичен театър",
+                    "premiere": "2009",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                }
+            ]
         }
     },
     "es": {
@@ -192,7 +380,7 @@
             "copyright": "Hristo Boytchev. Todos los derechos reservados."
         },
         "contact": {
-            "email": "hbagency@mail.orbitel.bg",
+            "email": "hbagency@gmail.com",
             "info": "Para derechos y consultas, por favor contacte al autor directamente."
         },
         "biography": {
@@ -252,6 +440,279 @@
                 }
             ],
             "additionalInfo": "Las obras de Hristo Boytchev se han representado en más de 40 países en los cinco continentes. Sus últimas obras son \"El Coronel y las Aves\" - una versión femenina de \"El Coronel Pájaro\", \"La Orquesta del Titanic\", \"Hospital de Distrito\", el monodrama \"Fenómenos\" e \"Iglú\". Obtuvo los derechos de autor de Εκδόσεις Καζαντζάκη para escribir una obra \"Zorba el Griego\" sobre la famosa novela de N. Kazantzakis y \"El Gran Gatsby\" también."
+        },
+        "staging": {
+            "title": "Puesta en escena",
+            "premiere": "Estreno",
+            "director": "Director",
+            "actors": "Actores",
+            "items": [
+                {
+                    "id": "armenia-yerevan-colonel-bird",
+                    "country": "Armenia",
+                    "city": "Ereván",
+                    "play": "El Coronel Pájaro",
+                    "theater": "Theatre Hrachia Kaplanyan",
+                    "premiere": "",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                },
+                {
+                    "id": "australia-sydney-titanic-orchestra",
+                    "country": "Australia",
+                    "city": "Sídney",
+                    "play": "La Orquesta del Titanic",
+                    "theater": "The New Theatre",
+                    "premiere": "16 de marzo de 2006",
+                    "director": "Peter Talmacs",
+                    "actors": "John Farndale, Alan Faulkner, Kim Knuckey, Jill McKay and Frank McNamara",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/Sidney.gif"
+                    ]
+                },
+                {
+                    "id": "bulgaria-sofia-colonel-bird",
+                    "country": "Bulgaria",
+                    "city": "Sofía",
+                    "play": "El Coronel y el Pájaro",
+                    "theater": "Theatre Sofia",
+                    "premiere": "14 de mayo de 2000",
+                    "director": "Boris Pankin",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/sofialit.gif",
+                        "http://www.hristoboytchev.com/images/snimki/sofia.jpg"
+                    ]
+                },
+                {
+                    "id": "bulgaria-sofia-titanic-orchestra",
+                    "country": "Bulgaria",
+                    "city": "Sofía",
+                    "play": "La Orquesta del Titanic",
+                    "theater": "National Youth Theatre",
+                    "premiere": "14 de mayo de 2002",
+                    "director": "Plamen Panev",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/sofia2.jpg"
+                    ]
+                },
+                {
+                    "id": "bulgaria-rouse-titanic-orchestra",
+                    "country": "Bulgaria",
+                    "city": "Ruse",
+                    "play": "La Orquesta del Titanic",
+                    "theater": "National Drama Theatre",
+                    "premiere": "2007",
+                    "director": "Plamen Panev",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/Ruse.jpg"
+                    ]
+                },
+                {
+                    "id": "france-paris-colonel-bird",
+                    "country": "Francia",
+                    "city": "París",
+                    "play": "El Coronel Pájaro",
+                    "theater": "Theatre de la Commune d'Aubervilliers",
+                    "premiere": "1999",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                },
+                {
+                    "id": "russia-samara-colonel-bird",
+                    "country": "Rusia",
+                    "city": "Samara",
+                    "play": "El Coronel Pájaro",
+                    "theater": "Samara Academic Drama Theatre",
+                    "premiere": "2009",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                }
+            ]
+        }
+    },
+    "de": {
+        "home": {
+            "title": "Hristo Boytchev",
+            "subtitle": "Dramatiker",
+            "intro": "Hristo Boytchev ist einer der meistgespielten zeitgenössischen europäischen Dramatiker. Seine Stücke wurden in über 40 Ländern inszeniert."
+        },
+        "navbar": {
+            "logo": "Hristo Boytchev",
+            "home": "Startseite",
+            "plays": "Stücke",
+            "contact": "Kontakt",
+            "aboutMe": "Über mich",
+            "aboutLinks": {
+                "biography": "Biografie",
+                "staging": "Inszenierungen",
+                "festivalsAndPrizes": "Festivals und Preise",
+                "review": "Rezensionen"
+            }
+        },
+        "footer": {
+            "copyright": "Hristo Boytchev. Alle Rechte vorbehalten."
+        },
+        "contact": {
+            "email": "hbagency@gmail.com",
+            "info": "Für Rechte und Anfragen wenden Sie sich bitte direkt an den Autor."
+        },
+        "biography": {
+            "title": "Biografie",
+            "events": [
+                {
+                    "year": "1950",
+                    "text": "Geboren in Nordbulgarien"
+                },
+                {
+                    "year": "1974",
+                    "text": "Abschluss am Höheren Institut für Maschinenbau, Russe, Bulgarien, Fachrichtung Maschinenbau"
+                },
+                {
+                    "year": "1976 - 1985",
+                    "text": "Arbeitet als technischer Leiter und Fabrikdirektor"
+                },
+                {
+                    "year": "1984",
+                    "text": "Uraufführung seines ersten Stücks \"Das Ding\""
+                },
+                {
+                    "year": "1985 - 1989",
+                    "text": "Studium der Dramaturgie an der Nationalen Akademie für Theater- und Filmkunst"
+                },
+                {
+                    "year": "1989",
+                    "text": "Zum Dramatiker des Jahres ernannt mit 40 Inszenierungen seiner Stücke auf den Bühnen in ganz Bulgarien."
+                },
+                {
+                    "year": "1990",
+                    "text": "Premiere des ersten Films basierend auf seinem Drehbuch \"Das Ding\". Beginnt regelmäßige Teilnahme als politischer Satiriker in einer der bekanntesten TV-Shows in Bulgarien."
+                },
+                {
+                    "year": "1996",
+                    "text": "Gewann die staatliche Förderung für den Dreh des Films \"Der Oberst und die Vögel\" nach seinem Drehbuch. Autor und Moderator seiner eigenen TV-Show. Kandidierte für das Amt des Präsidenten der Republik Bulgarien. Die zugeteilte Sendezeit wurde für ein spöttisches politisches Happening genutzt (30 aufeinanderfolgende Tage zur besten Sendezeit). Gewann etwa 2% der Stimmen."
+                },
+                {
+                    "year": "1997",
+                    "text": "Ausgezeichnet mit dem British Council International Playwriting Award für das beste Stück im internationalen Dramatikerwettbewerb für das Stück \"Der Oberst und die Vögel\". Das Stück wurde aus einem Pool von 400 Stücken aus der ganzen Welt ausgewählt. Der Preis wurde ihm im Royal National Theatre in London von Harold Pinter überreicht. Bis heute wurde das Stück mehr als 100 Mal in mehr als 30 Ländern weltweit inszeniert."
+                },
+                {
+                    "year": "1999",
+                    "text": "FESTIVAL D'AVIGNON, \"Der Oberst und die Vögel\" wurde im Programm des Festivals mit 15 Aufführungen vom \"Théâtre de la Commune d'Aubervilliers\", Paris, präsentiert. Ausgezeichnet mit dem prestigeträchtigen italienischen Theaterpreis Premio \"Enrico Maria Salerno\" per la drammaturgia Europea, 5. Ausgabe."
+                },
+                {
+                    "year": "2000",
+                    "text": "BONNER BIENNALE - 2000 - \"Der Oberst und die Vögel\" wurde im Programm des Festivals vom Theater \"Pleven\" präsentiert. Pate des \"Festivals für neue europäische Dramatik - Wiesbaden Biennale\" seit 2000."
+                },
+                {
+                    "year": "2006",
+                    "text": "Präsident der \"Vereinigung der bulgarischen Dramatiker\"."
+                },
+                {
+                    "year": "2009",
+                    "text": "\"GOLDENE MASKE\" - Moskau - \"Der Oberst und die Vögel\" wurde beim prestigeträchtigsten russischen Festival vom Akademischen Dramatheater Samara präsentiert."
+                }
+            ],
+            "additionalInfo": "Hristo Boytchevs Stücke wurden in mehr als 40 Ländern auf fünf Kontinenten inszeniert. Seine neuesten Stücke sind \"Der Oberst und die Vögel\" - eine weibliche Version von \"The Colonel Bird\", \"Das Orchester der Titanic\", \"Bezirkskrankenhaus\", das Monodrama \"Phänomene\" und \"Iglu\". Er erhielt das Urheberrecht von Εκδόσεις Καζαντζάκη, um ein Stück \"Alexis Sorbas\" nach dem berühmten Roman von N. Kazantzakis sowie \"Der große Gatsby\" zu schreiben."
+        },
+        "staging": {
+            "title": "Inszenierungen",
+            "premiere": "Premiere",
+            "director": "Regisseur",
+            "actors": "Schauspieler",
+            "items": [
+                {
+                    "id": "armenia-yerevan-colonel-bird",
+                    "country": "Armenien",
+                    "city": "Eriwan",
+                    "play": "Der Oberst und die Vögel",
+                    "theater": "Theatre Hrachia Kaplanyan",
+                    "premiere": "",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                },
+                {
+                    "id": "australia-sydney-titanic-orchestra",
+                    "country": "Australien",
+                    "city": "Sydney",
+                    "play": "Das Orchester der Titanic",
+                    "theater": "The New Theatre",
+                    "premiere": "16. März 2006",
+                    "director": "Peter Talmacs",
+                    "actors": "John Farndale, Alan Faulkner, Kim Knuckey, Jill McKay and Frank McNamara",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/Sidney.gif"
+                    ]
+                },
+                {
+                    "id": "bulgaria-sofia-colonel-bird",
+                    "country": "Bulgarien",
+                    "city": "Sofia",
+                    "play": "Der Oberst und der Vogel",
+                    "theater": "Theatre Sofia",
+                    "premiere": "14. Mai 2000",
+                    "director": "Boris Pankin",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/sofialit.gif",
+                        "http://www.hristoboytchev.com/images/snimki/sofia.jpg"
+                    ]
+                },
+                {
+                    "id": "bulgaria-sofia-titanic-orchestra",
+                    "country": "Bulgarien",
+                    "city": "Sofia",
+                    "play": "Das Orchester der Titanic",
+                    "theater": "National Youth Theatre",
+                    "premiere": "14. Mai 2002",
+                    "director": "Plamen Panev",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/sofia2.jpg"
+                    ]
+                },
+                {
+                    "id": "bulgaria-rouse-titanic-orchestra",
+                    "country": "Bulgarien",
+                    "city": "Russe",
+                    "play": "Das Orchester der Titanic",
+                    "theater": "National Drama Theatre",
+                    "premiere": "2007",
+                    "director": "Plamen Panev",
+                    "actors": "",
+                    "images": [
+                        "http://www.hristoboytchev.com/images/snimki/Ruse.jpg"
+                    ]
+                },
+                {
+                    "id": "france-paris-colonel-bird",
+                    "country": "Frankreich",
+                    "city": "Paris",
+                    "play": "Der Oberst und die Vögel",
+                    "theater": "Theatre de la Commune d'Aubervilliers",
+                    "premiere": "1999",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                },
+                {
+                    "id": "russia-samara-colonel-bird",
+                    "country": "Russland",
+                    "city": "Samara",
+                    "play": "Der Oberst und die Vögel",
+                    "theater": "Samara Academic Drama Theatre",
+                    "premiere": "2009",
+                    "director": "",
+                    "actors": "",
+                    "images": []
+                }
+            ]
         }
     }
 }
