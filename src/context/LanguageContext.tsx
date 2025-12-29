@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, type ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 
 import contentData from '../data/content.json';
 
@@ -12,8 +12,17 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+const LANGUAGE_STORAGE_KEY = 'hb-preferred-language';
+
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-    const [language, setLanguage] = useState<Language>('en');
+    const [language, setLanguage] = useState<Language>(() => {
+        const savedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+        return (savedLanguage as Language) || 'en';
+    });
+
+    useEffect(() => {
+        localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+    }, [language]);
 
     const content = contentData[language];
 

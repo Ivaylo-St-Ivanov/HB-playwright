@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
@@ -19,6 +19,8 @@ interface StagingItem {
 
 const Staging: React.FC = () => {
     const { content } = useLanguage();
+    const [selectedCountry, setSelectedCountry] = useState<string>('');
+    const countryRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
     // Group stagings by country
     const stagingsByCountry = useMemo(() => {
@@ -32,6 +34,29 @@ const Staging: React.FC = () => {
                 return acc;
             }, {});
     }, [content.staging.items]);
+
+    // Get sorted list of countries
+    const countries = useMemo(() => {
+        return Object.keys(stagingsByCountry).sort();
+    }, [stagingsByCountry]);
+
+    // Reset selected country when language changes
+    useEffect(() => {
+        setSelectedCountry('');
+    }, [content.staging.title]);
+
+    // Handle country selection and scroll
+    const handleCountryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const country = event.target.value;
+        setSelectedCountry(country);
+
+        if (country && countryRefs.current[country]) {
+            countryRefs.current[country]?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -61,13 +86,41 @@ const Staging: React.FC = () => {
         >
             <motion.h1 variants={itemVariants}>{content.staging.title}</motion.h1>
 
-            {Object.entries(stagingsByCountry).map(([country, stagings]) => {
+            {/* Sticky Country Filter */}
+            {countries.length > 0 && (
+                <motion.div
+                    className="staging-page__filter"
+                    variants={itemVariants}
+                >
+                    <select
+                        className="staging-page__dropdown"
+                        value={selectedCountry}
+                        onChange={handleCountryChange}
+                    >
+                        <option value="">
+                            {content.staging.title === 'Staging' ? 'Select a country...' :
+                                content.staging.title === 'Постановки' ? 'Изберете държава...' :
+                                    content.staging.title === 'Puesta en escena' ? 'Seleccione un país...' :
+                                        'Land auswählen...'}
+                        </option>
+                        {countries.map((country) => (
+                            <option key={country} value={country}>
+                                {country}
+                            </option>
+                        ))}
+                    </select>
+                </motion.div>
+            )}
+
+            {countries.map((country) => {
+                const stagings = stagingsByCountry[country];
                 // Use first staging's ID to create a stable key
                 const countryKey = stagings[0]?.id.split('-')[0] || country;
 
                 return (
                     <motion.div
                         key={countryKey}
+                        ref={(el) => { countryRefs.current[country] = el; }}
                         className="country-section"
                         variants={itemVariants}
                     >
