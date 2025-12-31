@@ -58,40 +58,20 @@ const Staging: React.FC = () => {
         }
     };
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1
-            }
-        }
-    };
-
-    const itemVariants = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-            y: 0,
-            opacity: 1
-        }
-    };
-
     return (
         <motion.div
             className="staging-page"
             key={content.staging.title} // Force re-render on language change
-            initial="hidden"
-            animate="visible"
-            variants={containerVariants}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
         >
-            <motion.h1 variants={itemVariants}>{content.staging.title}</motion.h1>
+            <h1>{content.staging.title}</h1>
 
             {/* Sticky Country Filter */}
             {countries.length > 0 && (
-                <motion.div
-                    className="staging-page__filter"
-                    variants={itemVariants}
-                >
+                <div className="staging-page__filter">
                     <select
                         className="staging-page__dropdown"
                         value={selectedCountry}
@@ -109,7 +89,7 @@ const Staging: React.FC = () => {
                             </option>
                         ))}
                     </select>
-                </motion.div>
+                </div>
             )}
 
             {countries.map((country) => {
@@ -118,11 +98,10 @@ const Staging: React.FC = () => {
                 const countryKey = stagings[0]?.id.split('-')[0] || country;
 
                 return (
-                    <motion.div
+                    <div
                         key={countryKey}
                         ref={(el) => { countryRefs.current[country] = el; }}
                         className="country-section"
-                        variants={itemVariants}
                     >
                         <h2 className="country-section__title">{country}</h2>
                         <div className="country-section__grid">
@@ -144,7 +123,7 @@ const Staging: React.FC = () => {
                                 />
                             ))}
                         </div>
-                    </motion.div>
+                    </div>
                 );
             })}
         </motion.div>

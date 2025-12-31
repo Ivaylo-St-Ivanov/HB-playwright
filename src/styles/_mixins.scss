@@ -27,3 +27,11 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

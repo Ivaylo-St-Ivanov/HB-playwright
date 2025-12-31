@@ -176,6 +176,36 @@
                     "images": []
                 }
             ]
+        },
+        "festivalsAndPrizes": {
+            "title": "Festivals and Prizes",
+            "items": [
+                {
+                    "title": "THE BRITISH COUNCIL INTERNATIONAL PLAYWRITING AWARDS, 1997",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/BreatishConcel.jpg",
+                    "text": "The British Council International Playwriting Award culminated at the award ceremony at the Royal National Theatre on Thursday 13 March. Labelled by the press as the \"Playwrights Olympics\", Harold Pinter presented the prizes to the six regional winners, all of whom were present at the reception, before announcing the overall winner, the decision for which had only been agreed by the judging panel an hour before.\n\nThe overall winner was Bulgarian Hristo Boytchev for his play \"The Colonel Bird\". The play was selected from among 400 plays from all over the world and described by the judges as \"joyful, magical, idiosyncratic, with an inspired comic parable for our times\".\n\n\"On Tour\" - a news bulletin from the British Council's Drama and Dance Unit, June, 1997, N 10"
+                },
+                {
+                    "title": "FESTIVAL D'AVIGNON, 1999 (Jun,10 - Jun,20)",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/avignon.jpg",
+                    "text": "The play has been performed since 01.07 till 21.07 at the \"CLOITRE DES CARMES\" by \"Theatre de la Commune d'Aubervilliers\""
+                },
+                {
+                    "title": "BONNER BIENNALE - 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/bon.jpg",
+                    "text": "Flieg Fluger, flieg... \"( The Colonel Burd )\" performed by Theatre Pleven - Bulgaria"
+                },
+                {
+                    "title": "Premio \"ENRICO MARIA SALERNO\" 1999, Roma",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/salerno.jpg",
+                    "text": "The competition is open to dramatic works addressing civil, moral, ethical, or political issues in the form of drama or comedy. Manuscripts, in 8 copies, must reach the Prize Secretariat by June 30, 1999, at: Centro Studi \"Enrico Maria Salerno\", via Montefiore 86, 00060, Castelnuovo di Porto - Rome, telephone 06/9079216. The winner will be awarded a Prize of 5,000,000 Lire; furthermore, the winning work will receive an endowment of 40,000,000 Lire for its stage production. The second-placed work will be awarded with publication."
+                },
+                {
+                    "title": "MITTELFEST - PROGETTO SPECIALE, Italy, 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/mittel.jpg",
+                    "text": "by Hristo Boytchev Sunday, July 23rd 19:00 - Teatro Ristori Italian edition directed by and starring Toni Bertorelli CO-PRODUCTION COMPAGNIA CICLOPE, Q.P. PRODUZIONI - TURIN AND MITTELFEST IN COLLABORATION WITH THEATRE PRIZE 'ENRICO MARIA SALERNO'\n\n The project continues Monday, July 24th, 19:00 - Teatro Ristori THE COLONEL BIRD (IL COLONNELLO CON LE ALI) Czech edition directed by Petr Lebl THEATRE NA ZABRADLI\n\nThe inmates of a lunatic asylum, seven human wrecks left on the summit of a remote mountain, seven outcasts from an outcast country on the edge of the new Europa Felix, undergo a miraculous recovery when one of their number, an old Red Army general, decides to enlist them in the new European Army and march on Strasbourg. Europe as a common home, as redemption, or as psychiatric therapy? Imagination, irony and originality are the basis of the great European success of the Bulgarian author, Hristo Boytchev and this play which Mittelfest presents in two interpretations.\n\nIn the Italian edition the direction and the leading role are by Toni Bertorelli, a product of the Carlo Cecchi school, who is an exceptional player of parts on the border between tragedy and comedy. The performance is staged with the support of the Premio Enrico Maria Salerno, an award for socially-committed drama won by Boytchev in 1999."
+                }
+            ]
         }
     },
     "bg": {
@@ -353,6 +383,36 @@
                     "director": "",
                     "actors": "",
                     "images": []
+                }
+            ]
+        },
+        "festivalsAndPrizes": {
+            "title": "Фестивали и награди",
+            "items": [
+                {
+                    "title": "НАГРАДА ЗА МЕЖДУНАРОДНА ДРАМАТУРГИЯ НА БРИТАНСКИЯ СЪВЕТ, 1997",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/BreatishConcel.jpg",
+                    "text": "Наградата за международна драматургия на Британския съвет кулминира с церемонията по награждаването в Кралския национален театър в четвъртък, 13 март. Обозначено от пресата като \"Олимпиада на драматурзите\", Харолд Пинтър връчи наградите на шестимата регионални победители, всички от които присъстваха на приема, преди да обяви големия победител, решението за когото беше взето от журито само час преди това.\n\nГолемият победител стана българинът Христо Бойчев за пиесата си \"Полковникът птица\". Пиесата беше избрана измежду 400 пиеси от цял свят и описана от съдиите като \"радостна, магическа, идиосинкратична, с вдъхновена комична притча за нашето време\".\n\n\"On Tour\" - новинарски бюлетин от отдела за драма и танц на Британския съвет, юни 1997 г., N 10"
+                },
+                {
+                    "title": "ФЕСТИВАЛ Д'АВИНЬОН, 1999 (10 юни - 20 юни)",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/avignon.jpg",
+                    "text": "Пиесата се игра от 01.07 до 21.07 в \"CLOITRE DES CARMES\" от \"Theatre de la Commune d'Aubervilliers\""
+                },
+                {
+                    "title": "БОНСКО БИЕНАЛЕ - 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/bon.jpg",
+                    "text": "Flieg Fluger, flieg... \"( Полковникът птица )\", представено от Театър Плевен - България"
+                },
+                {
+                    "title": "Награда \"ЕНРИКО МАРИЯ САЛЕРНО\" 1999, Рим",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/salerno.jpg",
+                    "text": "В конкурса се допускат драматургични творби, разглеждащи граждански, морални, етични или политически проблеми под формата на драма или комедия. Ръкописите, в 8 екземпляра, трябва да бъдат получени в Секретариата на наградата до 30 юни 1999 г. на адрес: Centro Studi \"Enrico Maria Salerno\", via Montefiore 86, 00060, Castelnuovo di Porto - Рим, телефон 06/9079216. На победителя ще бъде присъдена награда от 5 000 000 лири, а печелившата творба ще получи финансиране от 40 000 000 лири за сценичната си реализация. Творбата, класирана на второ място, ще бъде наградена с публикация."
+                },
+                {
+                    "title": "МИТЕЛФЕСТ - СПЕЦИАЛЕН ПРОЕКТ, Италия, 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/mittel.jpg",
+                    "text": "от Христо Бойчев Неделя, 23 юли 19:00 ч. - Театър Ристори Италианско издание режисура и участие: Тони Берторели КОПРОДУКЦИЯ НА COMPAGNIA CICLOPE, Q.P. PRODUZIONI - ТОРИНО И MITTELFEST В СЪТРУДНИЧЕСТВО С ТЕАТРАЛНА НАГРАДА 'ЕНРИКО МАРИЯ САЛЕРНО'\n\nПроектът продължава в понеделник, 24 юли, 19:00 ч. - Театър Ристори ПОЛКОВНИКЪТ ПТИЦА (IL COLONNELLO CON LE ALI) Чешко издание режисьор: Петър Лебъл ТЕАТЪР NA ZABRADLI\n\nПациентите на една лудница, седем човешки развалини, забравени на върха на една откъсната планина, седем отхвърлени души от една отхвърлена страна в периферията на новата 'Щастлива Европа', оздравяват почти чудодейно, когато един от тях, бивш генерал от Червената армия, решава да ги строява в редиците на новата европейска армия и да поеме на поход към Страсбург. Европа като общ дом, като изкупление или като психиатрична терапия? Фантазия и ирония характеризират тази гледна точка 'отвътре' към войната или по-скоро към сложните отношения между Европа и Балканите, видени именно от Балканите. Христо Бойчев е един от най-поставяните български автори и се утвърждава в цяла Европа като автентичен драматургичен талант. Оригиналността на текста и успехът, който той жъне, не можеха да не стимулират едно италианско издание, което искахме да представим редом с това, реализирано в Прага от Театър Na Zabradli, предлагайки на публиката едно сравнение, два ключа за интерпретация.\n\nРежисурата и главната роля са поверени на Тони Берторели, актьор и режисьор, възпитаник на школата на Карло Чеки, особено внимателен към съвременните автори и изключителен изпълнител на характери на границата между трагедия и комедия. Спектакълът е реализиран със съдействието на Награда 'Енрико Мария Салерно', ориентирана към драматургия с гражданска ангажираност и присъдена през 1999 г. на Бойчев."
                 }
             ]
         }
@@ -534,6 +594,36 @@
                     "images": []
                 }
             ]
+        },
+        "festivalsAndPrizes": {
+            "title": "Festivales y premios",
+            "items": [
+                {
+                    "title": "PREMIO INTERNACIONAL DE DRAMATURGIA DEL BRITISH COUNCIL, 1997",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/BreatishConcel.jpg",
+                    "text": "El Premio Internacional de Dramaturgia del British Council culminó en la ceremonia de entrega de premios en el Royal National Theatre el jueves 13 de marzo. Etiquetado por la prensa como las \"Olimpiadas de Dramaturgos\", Harold Pinter entregó los premios a los seis ganadores regionales, todos los cuales estuvieron presentes en la recepción, antes de anunciar al ganador general, cuya decisión solo había sido acordada por el panel de jueces una hora antes.\n\nEl ganador general fue el búlgaro Hristo Boytchev por su obra \"El Coronel Pájaro\". La obra fue seleccionada entre 400 obras de todo el mundo y descrita por los jueces como \"alegre, mágica, idiosincrásica, con una inspirada parábola cómica para nuestros tiempos\".\n\n\"On Tour\" - un boletín de noticias de la Unidad de Drama y Danza del British Council, junio de 1997, N 10"
+                },
+                {
+                    "title": "FESTIVAL D'AVIGNON, 1999 (10 de junio - 20 de junio)",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/avignon.jpg",
+                    "text": "La obra se ha representado del 01.07 al 21.07 en el \"CLOITRE DES CARMES\" por el \"Theatre de la Commune d'Aubervilliers\""
+                },
+                {
+                    "title": "BIENAL DE BONN - 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/bon.jpg",
+                    "text": "Flieg Fluger, flieg... \"( El Coronel Pájaro )\", interpretado por el Teatro de Pleven - Bulgaria"
+                },
+                {
+                    "title": "Premio \"ENRICO MARIA SALERNO\" 1999, Roma",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/salerno.jpg",
+                    "text": "Al concurso se admiten obras de dramaturgia que aborden problemáticas civiles, morales, éticas o políticas en forma de drama o comedia. Los manuscritos, en número de 8 copias, deben llegar a la Secretaría del Premio antes del 30 de junio de 1999, a: Centro Studi \"Enrico Maria Salerno\", via Montefiore 86, 00060, Castelnuovo di Porto - Roma, teléfono 06/9079216. Al ganador se le asignará un Premio de 5.000.000 de liras; además, la obra ganadora tendrá una dotación de 40.000.000 de liras para su realización escénica. La obra clasificada en segundo lugar será premiada con su publicación."
+                },
+                {
+                    "title": "MITTELFEST - PROGETTO SPECIALE, Italia, 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/mittel.jpg",
+                    "text": "de Hristo Boytchev Domingo 23 de julio 19:00 h - Teatro Ristori edición italiana dirección y actuación de Toni Bertorelli COPRODUCCIÓN COMPAGNIA CICLOPE, Q.P. PRODUZIONI - TURÍN Y MITTELFEST EN COLABORACIÓN CON EL PREMIO TEATRAL 'ENRICO MARIA SALERNO'\n\nEl proyecto continúa el lunes 24 de julio, 19:00 h - Teatro Ristori EL CORONEL PÁJARO (IL COLONNELLO CON LE ALI) edición checa dirección de Petr Lebl TEATRO NA ZABRADLI\n\nLos internos de un manicomio, siete despojos humanos olvidados en la cima de una montaña remota, siete marginados de un país marginado en los confines de la nueva Europa Felix, experimentan una recuperación milagrosa cuando uno de ellos, un ex general del Ejército Rojo, decide alistarlos en el nuevo ejército europeo y marchar hacia Estrasburgo. ¿Europa como casa común, como redención o como terapia psiquiátrica? Imaginación, ironía y originalidad son la base del gran éxito europeo del autor búlgaro Hristo Boytchev y de esta obra que Mittelfest presenta en dos interpretaciones.\n\nEn la edición italiana, la dirección y el papel principal corren a cargo de Toni Bertorelli, actor y director formado en la escuela de Carlo Cecchi, especialmente atento a los autores contemporáneos y un intérprete excepcional de personajes en el límite entre la tragedia y la comedia. El espectáculo se realiza con la colaboración del Premio Enrico Maria Salerno, un galardón para la dramaturgia de compromiso social ganado por Boytchev en 1999."
+                }
+            ]
         }
     },
     "de": {
@@ -711,6 +801,36 @@
                     "director": "",
                     "actors": "",
                     "images": []
+                }
+            ]
+        },
+        "festivalsAndPrizes": {
+            "title": "Festivals und Preise",
+            "items": [
+                {
+                    "title": "INTERNATIONALER DRAMATIKERPREIS DES BRITISH COUNCIL, 1997",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/BreatishConcel.jpg",
+                    "text": "Der International Playwriting Award des British Council gipfelte in der Preisverleihung im Royal National Theatre am Donnerstag, den 13. März. Von der Presse als \"Dramatiker-Olympiade\" bezeichnet, überreichte Harold Pinter die Preise an die sechs regionalen Gewinner, die alle beim Empfang anwesend waren, bevor er den Gesamtsieger bekannt gab, dessen Entscheidung vom Preisgericht erst eine Stunde zuvor getroffen worden war.\n\nDer Gesamtsieger war der Bulgare Hristo Boytchev für sein Stück \"Der Oberst und die Vögel\". Das Stück wurde aus 400 Stücken aus der ganzen Welt ausgewählt und von der Jury als \"fröhlich, magisch, eigenwillig, mit einer inspirierten komischen Parabel für unsere Zeit\" beschrieben.\n\n\"On Tour\" - ein Nachrichtenbulletin der Drama and Dance Unit des British Council, Juni 1997, Nr. 10"
+                },
+                {
+                    "title": "FESTIVAL D'AVIGNON, 1999 (10. Juni - 20. Juni)",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/avignon.jpg",
+                    "text": "Das Stück wurde vom 01.07. bis zum 21.07. im \"CLOITRE DES CARMES\" vom \"Theatre de la Commune d'Aubervilliers\" aufgeführt."
+                },
+                {
+                    "title": "BONNER BIENNALE - 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/bon.jpg",
+                    "text": "Flieg Fluger, flieg... \"( Der Oberst und die Vögel )\", aufgeführt vom Theater Pleven - Bulgarien"
+                },
+                {
+                    "title": "Premio \"ENRICO MARIA SALERNO\" 1999, Rom",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/salerno.jpg",
+                    "text": "Zum Wettbewerb zugelassen sind dramatische Werke, die sich in Form von Drama oder Komödie mit zivilen, moralischen, ethischen oder politischen Problemen befassen. Die Manuskripte müssen in 8-facher Ausfertigung bis zum 30. Juni 1999 beim Sekretariat des Preises eingehen, unter der Adresse: Centro Studi \"Enrico Maria Salerno\", via Montefiore 86, 00060, Castelnuovo di Porto - Rom, Telefon 06/9079216. Dem Gewinner wird ein Preis von 5.000.000 Lire verliehen; darüber hinaus erhält das gewinnende Werk eine Ausstattung von 40.000.000 Lire für seine szenische Realisierung. Das zweitplatzierte Werk wird mit der Veröffentlichung prämiert."
+                },
+                {
+                    "title": "MITTELFEST - PROGETTO SPECIALE, Italien, 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/mittel.jpg",
+                    "text": "von Hristo Boytchev Sonntag, 23. Juli 19:00 Uhr - Teatro Ristori Italienische Ausgabe Regie und mit Toni Bertorelli KOPRODUKTION COMPAGNIA CICLOPE, Q.P. PRODUZIONI - TURIN UND MITTELFEST IN ZUSAMMENARBEIT MIT DEM THEATERPREIS 'ENRICO MARIA SALERNO'\n\nDas Projekt wird am Montag, 24. Juli, 19:00 Uhr fortgesetzt - Teatro Ristori DER OBERST UND DIE VÖGEL (IL COLONNELLO CON LE ALI) Tschechische Ausgabe Regie: Petr Lebl THEATER NA ZABRADLI\n\nDie Insassen einer Irrenanstalt, sieben menschliche Wracks, vergessen auf dem Gipfel eines abgelegenen Berges, sieben Ausgestoßene aus einem ausgestoßenen Land am Rande des neuen Europa Felix, erleben eine wundersame Genesung, als einer von ihnen, ein ehemaliger General der Roten Armee, beschließt, sie in die neue europäische Armee einzureihen und nach Straßburg zu marschieren. Europa als gemeinsames Haus, als Erlösung oder als psychiatrische Therapie? Fantasie, Ironie und Originalität sind die Grundlage für den großen europäischen Erfolg des bulgarischen Autors Hristo Boytchev und dieses Stücks, das das Mittelfest in zwei Interpretationen präsentiert.\n\nIn der italienischen Ausgabe liegen Regie und Hauptrolle bei Toni Bertorelli, einem Schauspieler und Regisseur aus der Schule von Carlo Cecchi, der besonders auf zeitgenössische Autoren achtet und ein außergewöhnlicher Interpret von Charakteren an der Grenze zwischen Tragödie und Komödie ist. Die Aufführung wird mit Unterstützung des Preises Enrico Maria Salerno realisiert, einer Auszeichnung für sozial engagierte Dramatik, die Boytchev 1999 gewann."
                 }
             ]
         }

@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
                 className="contact-page"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.8 }}
             >
                 <img src={hbLogo} alt="Hristo Boytchev Logo" className="contact-page__logo" />
                 <h1 style={{ opacity: '0' }}>{content.navbar.contact}</h1>
