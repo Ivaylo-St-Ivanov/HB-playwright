@@ -170,49 +170,6 @@
         text-align: center;
     }
 
-    &__filter {
-        position: sticky;
-        top: 80px; // Adjust based on navbar height
-        z-index: 90;
-        padding: $spacing-sm 0;
-        margin-bottom: $spacing-md;
-        background: rgba($color-bg, 0.8);
-        backdrop-filter: blur(8px);
-
-        @include mobile {
-            top: 60px;
-        }
-    }
-
-    &__dropdown {
-        padding: $spacing-sm;
-        font-family: $font-body;
-        font-size: 1rem;
-        color: $color-text;
-        background-color: $color-surface;
-        border: 1px solid rgba($color-text, 0.2);
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all $transition-fast;
-        min-width: 250px;
-
-        &:hover {
-            border-color: $color-accent;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        &:focus {
-            outline: none;
-            border-color: $color-accent;
-            box-shadow: 0 0 0 2px rgba($color-accent, 0.2);
-        }
-
-        @include mobile {
-            width: 100%;
-        }
-    }
-
     .country-section {
         scroll-margin-top: 160px;
         margin-bottom: $spacing-xl;

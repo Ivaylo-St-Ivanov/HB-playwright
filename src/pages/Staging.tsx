@@ -1,8 +1,10 @@
-import React, { useMemo, useState, useRef, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
+import { useCountryFilter } from '../hooks/useCountryFilter';
 
+import StickyCountryFilter from '../components/StickyCountryFilter';
 import StagingCard from '../components/StagingCard';
 
 interface StagingItem {
@@ -19,44 +21,18 @@ interface StagingItem {
 
 const Staging: React.FC = () => {
     const { content } = useLanguage();
-    const [selectedCountry, setSelectedCountry] = useState<string>('');
-    const countryRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
-    // Group stagings by country
-    const stagingsByCountry = useMemo(() => {
-        return content.staging.items
-            .reduce((acc: { [key: string]: StagingItem[] }, staging: StagingItem) => {
-                const country = staging.country;
-                if (!acc[country]) {
-                    acc[country] = [];
-                }
-                acc[country].push(staging);
-                return acc;
-            }, {});
-    }, [content.staging.items]);
-
-    // Get sorted list of countries
-    const countries = useMemo(() => {
-        return Object.keys(stagingsByCountry).sort();
-    }, [stagingsByCountry]);
-
-    // Reset selected country when language changes
-    useEffect(() => {
-        setSelectedCountry('');
-    }, [content.staging.title]);
-
-    // Handle country selection and scroll
-    const handleCountryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        const country = event.target.value;
-        setSelectedCountry(country);
-
-        if (country && countryRefs.current[country]) {
-            countryRefs.current[country]?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    };
+    // Use the custom hook for filtering logic
+    const {
+        countries,
+        itemsByCountry,
+        selectedCountry,
+        handleCountryChange,
+        countryRefs
+    } = useCountryFilter<StagingItem>(
+        content.staging.items,
+        content.staging.title
+    );
 
     return (
         <motion.div
@@ -69,31 +45,20 @@ const Staging: React.FC = () => {
         >
             <h1>{content.staging.title}</h1>
 
-            {/* Sticky Country Filter */}
-            {countries.length > 0 && (
-                <div className="staging-page__filter">
-                    <select
-                        className="staging-page__dropdown"
-                        value={selectedCountry}
-                        onChange={handleCountryChange}
-                    >
-                        <option value="">
-                            {content.staging.title === 'Staging' ? 'Select a country...' :
-                                content.staging.title === 'Постановки' ? 'Изберете държава...' :
-                                    content.staging.title === 'Puesta en escena' ? 'Seleccione un país...' :
-                                        'Land auswählen...'}
-                        </option>
-                        {countries.map((country) => (
-                            <option key={country} value={country}>
-                                {country}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-            )}
+            <StickyCountryFilter
+                countries={countries}
+                selectedCountry={selectedCountry}
+                onChange={handleCountryChange}
+                placeholder={
+                    content.staging.title === 'Staging' ? 'Select a country...' :
+                        content.staging.title === 'Постановки' ? 'Изберете държава...' :
+                            content.staging.title === 'Puesta en escena' ? 'Seleccione un país...' :
+                                'Land auswählen...'
+                }
+            />
 
             {countries.map((country) => {
-                const stagings = stagingsByCountry[country];
+                const stagings = itemsByCountry[country];
                 // Use first staging's ID to create a stable key
                 const countryKey = stagings[0]?.id.split('-')[0] || country;
 
