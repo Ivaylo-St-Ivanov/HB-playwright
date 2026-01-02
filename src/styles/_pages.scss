@@ -289,3 +289,70 @@
         white-space: pre-line;
     }
 }
+
+// Review Page
+.review-page {
+    padding: $spacing-md $spacing-xl $spacing-xl $spacing-xl;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h1 {
+        margin-bottom: $spacing-md;
+        text-align: center;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: $spacing-lg;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: italic;
+        color: $color-secondary;
+    }
+
+    .country-section {
+        scroll-margin-top: 160px;
+        margin-bottom: $spacing-xl;
+
+        &__title {
+            font-size: 2rem;
+            margin-bottom: $spacing-md;
+            padding-bottom: $spacing-xs;
+            border-bottom: 1px solid rgba($color-accent, 0.3);
+            display: inline-block;
+            color: $color-text;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: $spacing-lg;
+        }
+    }
+
+    .city-block {
+        &__title {
+            font-size: 1.5rem;
+            color: $color-accent;
+            margin-bottom: $spacing-sm;
+        }
+    }
+
+    .review-item {
+        margin-bottom: $spacing-md;
+        padding-left: $spacing-md;
+        border-left: 2px solid rgba($color-accent, 0.3);
+
+        h4 {
+            margin-bottom: $spacing-xs;
+            color: $color-text;
+        }
+
+        &__text {
+            white-space: pre-line;
+            line-height: 1.6;
+            color: $color-text;
+        }
+    }
+}
