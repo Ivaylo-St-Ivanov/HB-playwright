@@ -63,7 +63,7 @@
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    padding: $spacing-lg 0;
+    padding-top: $spacing-md;
 
     &__logo {
         width: 150px;
@@ -314,6 +314,10 @@
     .country-section {
         scroll-margin-top: 160px;
         margin-bottom: $spacing-xl;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
 
         &__title {
             font-size: 2rem;

@@ -22,7 +22,7 @@ const Layout: React.FC = () => {
                 <Outlet />
             </main>
 
-            <Footer />
+            {!isHome && <Footer />}
         </div>
     );
 };

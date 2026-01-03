@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -10,12 +10,84 @@ import LanguageSwitcher from './LanguageSwitcher';
 const Navbar: React.FC = () => {
     const location = useLocation();
     const { content } = useLanguage();
-    const [isAboutOpen, setIsAboutOpen] = React.useState(false);
+    const [isAboutOpen, setIsAboutOpen] = useState(false);
+    const [isCollapsed, setIsCollapsed] = useState(false);
+    const lastScrollY = useRef(0);
+    const timeoutRef = useRef<number | null>(null);
 
     const isActive = (path: string) => location.pathname === path ? 'navbar__link--active' : '';
+    const isHomePage = location.pathname === '/';
+
+    // Handle scroll and timeout
+    useEffect(() => {
+        if (isHomePage) {
+            setIsCollapsed(false);
+            return;
+        }
+
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            // Clear existing timeout on scroll
+            if (timeoutRef.current) {
+                clearTimeout(timeoutRef.current);
+            }
+
+            if (currentScrollY > lastScrollY.current) {
+                // Scrolling down
+                setIsCollapsed(true);
+            } else {
+                // Scrolling up
+                setIsCollapsed(false);
+            }
+
+            lastScrollY.current = currentScrollY;
+
+            // Set timeout to collapse after 10s of inactivity
+            timeoutRef.current = setTimeout(() => {
+                setIsCollapsed(true);
+            }, 10000);
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        // Initial timeout setup
+        timeoutRef.current = setTimeout(() => {
+            setIsCollapsed(true);
+        }, 10000);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            if (timeoutRef.current) {
+                clearTimeout(timeoutRef.current);
+            }
+        };
+    }, [isHomePage]);
+
+    // Expand on hover
+    const handleMouseEnter = () => {
+        if (!isHomePage) {
+            setIsCollapsed(false);
+            if (timeoutRef.current) {
+                clearTimeout(timeoutRef.current);
+            }
+        }
+    };
+
+    const handleMouseLeave = () => {
+        if (!isHomePage) {
+            timeoutRef.current = setTimeout(() => {
+                setIsCollapsed(true);
+            }, 10000);
+        }
+    };
 
     return (
-        <nav className="navbar">
+        <nav
+            className={`navbar ${isCollapsed ? 'navbar--collapsed' : ''}`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
             <div className="navbar__container">
                 {location.pathname !== '/' && (
                     <Link to="/" className="navbar__logo">

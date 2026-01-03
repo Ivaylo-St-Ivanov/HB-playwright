@@ -12,7 +12,7 @@
     z-index: 1000;
     border-bottom: 1px solid;
     border-color: var(--color-border);
-    transition: background-color $transition-normal;
+    transition: background-color $transition-normal, padding $transition-normal;
 
     &__container {
         @include container;
@@ -29,8 +29,19 @@
         font-family: $font-heading;
         font-size: 1.5rem;
         font-weight: 700;
-        color: $color-text;
+        background: linear-gradient(175deg, #000 0%, #DAA520 60%, #000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
         letter-spacing: 1px;
+        transition: transform $transition-slow;
+
+        [data-theme="dark"] & {
+            background: linear-gradient(175deg, #fff 0%, #DAA520 60%, #fff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     }
 
     &__links {
@@ -73,16 +84,45 @@
             color: $color-accent;
         }
     }
+
+    // Collapsed state
+    &--collapsed {
+        padding: 0.25rem $spacing-md;
+        background: rgba($color-bg, 0.95);
+        border-bottom-color: var(--color-border);
+
+        .navbar__links {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .navbar__logo {
+            transform: scale(0.6);
+            transition: transform $transition-slow;
+        }
+    }
+
+    // Ensure links are visible when not collapsed
+    &:not(&--collapsed) {
+        .navbar__links {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+            transition: all 0.3s ease;
+        }
+
+        .navbar__logo {
+            transform: scale(1);
+            transition: transform $transition-slow;
+        }
+    }
 }
 
 // Footer
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: $spacing-xs;
-    backdrop-filter: blur(0.25rem);
+    padding: $spacing-sm;
     text-align: center;
     font-size: 0.8rem;
     color: $color-secondary;
@@ -241,16 +281,49 @@
 
 // Sticky Country Filter
 .sticky-filter {
-    position: sticky;
-    top: 80px; // Adjust based on navbar height
+    position: fixed;
+    top: 90px;
+    right: $spacing-md;
     z-index: 90;
-    padding: $spacing-sm 0;
-    margin-bottom: $spacing-md;
-    background: rgba($color-bg, 0.8);
-    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: $spacing-xs;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    // Golden shadow for dark theme
+    [data-theme="dark"] & {
+        box-shadow: 0 4px 6px rgba(218, 165, 32, 0.15);
+    }
 
     @include mobile {
-        top: 60px;
+        top: 70px;
+        right: $spacing-sm;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: rgba($color-surface, 0.9);
+        border: 1px solid rgba($color-text, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all $transition-normal;
+        color: $color-text;
+
+        &:hover {
+            color: $color-accent;
+            transform: scale(1.2);
+        }
+
+        svg {
+            display: block;
+        }
     }
 
     &__dropdown {
@@ -264,6 +337,15 @@
         cursor: pointer;
         transition: all $transition-fast;
         min-width: 250px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(10px);
+
+        &--visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(0);
+        }
 
         &:hover {
             border-color: $color-accent;
@@ -277,7 +359,7 @@
         }
 
         @include mobile {
-            width: 100%;
+            min-width: 200px;
         }
     }
 }
