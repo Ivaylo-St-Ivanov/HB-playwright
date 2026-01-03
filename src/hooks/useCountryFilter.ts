@@ -35,8 +35,7 @@ export const useCountryFilter = <T extends ItemWithCountry>(
     }, [resetDependency]);
 
     // Handle country selection and scroll
-    const handleCountryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        const country = event.target.value;
+    const handleCountrySelect = (country: string) => {
         setSelectedCountry(country);
 
         if (country && countryRefs.current[country]) {
@@ -51,7 +50,7 @@ export const useCountryFilter = <T extends ItemWithCountry>(
         countries,
         itemsByCountry,
         selectedCountry,
-        handleCountryChange,
+        handleCountrySelect,
         countryRefs
     };
 };

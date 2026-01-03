@@ -293,9 +293,26 @@
     padding: $spacing-xs;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    // Golden shadow for dark theme
+    // Initial state: smaller and slightly transparent
+    transform: scale(0.75);
+    opacity: 0.8;
+    transform-origin: right center;
+    transition: all $transition-normal;
+    background: rgba($color-surface, 0.4);
+
+    &--expanded {
+        transform: scale(1);
+        opacity: 1;
+        background: rgba($color-surface, 0.9);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
     [data-theme="dark"] & {
         box-shadow: 0 4px 6px rgba(218, 165, 32, 0.15);
+
+        &.sticky-filter--expanded {
+            box-shadow: 0 8px 16px rgba(218, 165, 32, 0.25);
+        }
     }
 
     @include mobile {
@@ -326,20 +343,13 @@
         }
     }
 
-    &__dropdown {
-        padding: $spacing-sm;
-        font-family: $font-body;
-        font-size: 1rem;
-        color: $color-text;
-        background-color: $color-surface;
-        border: 1px solid rgba($color-text, 0.2);
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all $transition-fast;
-        min-width: 250px;
+    &__custom-dropdown {
+        min-width: 220px;
         opacity: 0;
         pointer-events: none;
         transform: translateX(10px);
+        transition: all $transition-normal;
+        position: relative;
 
         &--visible {
             opacity: 1;
@@ -347,19 +357,85 @@
             transform: translateX(0);
         }
 
+        @include mobile {
+            min-width: 180px;
+        }
+    }
+
+    &__selected {
+        padding: $spacing-xs $spacing-sm;
+        background: $color-surface;
+        border: 1px solid rgba($color-text, 0.2);
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.95rem;
+        transition: all $transition-fast;
+
         &:hover {
             border-color: $color-accent;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__arrow {
+        font-size: 0.7rem;
+        transition: transform $transition-fast;
+        margin-left: $spacing-xs;
+        opacity: 0.6;
+
+        &--open {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__options {
+        position: absolute;
+        top: calc(100% + 5px);
+        right: 0;
+        width: 100%;
+        background: $color-surface;
+        border: 1px solid rgba($color-text, 0.1);
+        border-radius: 8px;
+        list-style: none;
+        padding: $spacing-xs 0;
+        margin: 0;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        max-height: 300px;
+        overflow-y: auto;
+
+        [data-theme="dark"] & {
+            box-shadow: 0 10px 25px rgba(218, 165, 32, 0.1);
         }
 
-        &:focus {
-            outline: none;
-            border-color: $color-accent;
-            box-shadow: 0 0 0 2px rgba($color-accent, 0.2);
+        &::-webkit-scrollbar {
+            width: 4px;
         }
 
-        @include mobile {
-            min-width: 200px;
+        &::-webkit-scrollbar-thumb {
+            background: rgba($color-accent, 0.3);
+            border-radius: 2px;
+        }
+    }
+
+    &__option {
+        padding: $spacing-xs $spacing-sm;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all $transition-fast;
+
+        &:hover {
+            background: rgba($color-accent, 0.1);
+            color: $color-accent;
+            padding-left: calc($spacing-sm + 5px);
+        }
+
+        &--active {
+            color: $color-accent;
+            font-weight: 600;
+            background: rgba($color-accent, 0.05);
         }
     }
 }

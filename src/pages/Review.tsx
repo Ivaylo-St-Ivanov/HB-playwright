@@ -25,7 +25,7 @@ const Review: React.FC = () => {
         countries,
         itemsByCountry,
         selectedCountry,
-        handleCountryChange,
+        handleCountrySelect,
         countryRefs
     } = useCountryFilter<ReviewCountry>(
         content.review.items as unknown as ReviewCountry[],
@@ -41,50 +41,60 @@ const Review: React.FC = () => {
     };
 
     return (
-        <motion.div
-            className="review-page"
-            key={content.review.title}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.8 }}
-        >
-            <h1>{content.review.title}</h1>
-            <p className="review-page__subtitle">{content.review.subtitle}</p>
+        <>
+            <motion.div
+                key={`${content.review.title}-filter`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+            >
+                <StickyCountryFilter
+                    countries={countries}
+                    selectedCountry={selectedCountry}
+                    onSelect={handleCountrySelect}
+                    placeholder={getPlaceholderText()}
+                />
+            </motion.div>
 
-            <StickyCountryFilter
-                countries={countries}
-                selectedCountry={selectedCountry}
-                onChange={handleCountryChange}
-                placeholder={getPlaceholderText()}
-            />
+            <motion.div
+                className="review-page"
+                key={content.review.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+            >
+                <h1>{content.review.title}</h1>
+                <p className="review-page__subtitle">{content.review.subtitle}</p>
 
-            {countries.map((country) => {
-                const countryItems = itemsByCountry[country];
-                return (
-                    <div
-                        key={country}
-                        ref={(el) => { countryRefs.current[country] = el; }}
-                        className="country-section"
-                    >
-                        <h2 className="country-section__title">{country}</h2>
-                        <div className="country-section__content">
-                            {countryItems.map((item, index) => (
-                                <div key={index} className="city-block">
-                                    <h3 className="city-block__title">{item.city}</h3>
-                                    {item.reviews.map((review, rIndex) => (
-                                        <div key={rIndex} className="review-item">
-                                            {review.title && <h4>{review.title}</h4>}
-                                            <p className="review-item__text">{review.text}</p>
-                                        </div>
-                                    ))}
-                                </div>
-                            ))}
+                {countries.map((country) => {
+                    const countryItems = itemsByCountry[country];
+                    return (
+                        <div
+                            key={country}
+                            ref={(el) => { countryRefs.current[country] = el; }}
+                            className="country-section"
+                        >
+                            <h2 className="country-section__title">{country}</h2>
+                            <div className="country-section__content">
+                                {countryItems.map((item, index) => (
+                                    <div key={index} className="city-block">
+                                        <h3 className="city-block__title">{item.city}</h3>
+                                        {item.reviews.map((review, rIndex) => (
+                                            <div key={rIndex} className="review-item">
+                                                {review.title && <h4>{review.title}</h4>}
+                                                <p className="review-item__text">{review.text}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                );
-            })}
-        </motion.div>
+                    );
+                })}
+            </motion.div>
+        </>
     );
 };
 
