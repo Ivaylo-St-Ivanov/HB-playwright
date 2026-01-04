@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
 import plays from '../data/plays.json';
 
+import PlayCard from '../components/PlayCard';
+import PlayModal from '../components/PlayModal';
+
 const Plays: React.FC = () => {
     const { language } = useLanguage();
+    const [selectedPlay, setSelectedPlay] = useState<string | null>(null);
+    const [selectedLang, setSelectedLang] = useState<string | null>(null);
+    const [selectedFullText, setSelectedFullText] = useState<string | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleLanguageClick = (playTitle: string, lang: string, fullText: string) => {
+        setSelectedPlay(playTitle);
+        setSelectedLang(lang);
+        setSelectedFullText(fullText);
+        setIsModalOpen(true);
+    };
 
     return (
         <div className="container">
@@ -19,31 +33,23 @@ const Plays: React.FC = () => {
 
             <div className="plays-grid">
                 {plays.map((play, index) => (
-                    <motion.div
+                    <PlayCard
                         key={play.id}
-                        className="play-card"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                    >
-                        <h3 className="play-card__title">
-                            {play.title[language as keyof typeof play.title]}
-                        </h3>
-                        <div className="play-card__meta">
-                            {play.year} | {play.genre[language as keyof typeof play.genre]}
-                        </div>
-                        <p className="play-card__desc">
-                            {play.description[language as keyof typeof play.description]}
-                        </p>
-                        <div style={{ marginTop: '1rem' }}>
-                            <span style={{ fontSize: '0.8rem', color: '#888' }}>
-                                {language === 'en' ? 'Available in: ' : 'Налична на: '}
-                                {play.languages.join(', ')}
-                            </span>
-                        </div>
-                    </motion.div>
+                        play={play}
+                        language={language}
+                        handleLanguageClick={handleLanguageClick}
+                        index={index}
+                    />
                 ))}
             </div>
+
+            <PlayModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                playTitle={selectedPlay || ''}
+                languageName={selectedLang || ''}
+                fullText={selectedFullText || ''}
+            />
         </div>
     );
 };
