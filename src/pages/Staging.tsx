@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { motion } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
 import { useCountryFilter } from '../hooks/useCountryFilter';
+import { useLocalizedData } from '../hooks/useLocalizedData';
+import type { StagingCountryData, StagingCityData, LocalizedValue } from '../types/data';
+import stagingsData from '../data/stagings.json';
 
 import StickyCountryFilter from '../components/StickyCountryFilter';
 import StagingCard from '../components/StagingCard';
@@ -22,6 +25,32 @@ interface StagingItem {
 const Staging: React.FC = () => {
     const { content } = useLanguage();
 
+    // Transform logic for stagings
+    const transformStagingCity = useCallback((
+        countryName: string,
+        cityName: string,
+        cityData: StagingCityData,
+        getLocalized: (val: LocalizedValue) => string
+    ) => {
+        return cityData.stagings.map((staging, index) => ({
+            id: `${countryName}-${cityName}-${index}`, // Generate a unique ID
+            country: countryName,
+            city: cityName,
+            play: getLocalized(staging.play),
+            theater: getLocalized(staging.theater),
+            premiere: getLocalized(staging.premiere),
+            director: getLocalized(staging.director),
+            actors: getLocalized(staging.actors),
+            images: staging.images || []
+        }));
+    }, []);
+
+    // Use the shared hook for data transformation
+    const stagingItems = useLocalizedData<StagingCountryData, StagingItem>(
+        stagingsData as StagingCountryData[],
+        transformStagingCity
+    );
+
     // Use the custom hook for filtering logic
     const {
         countries,
@@ -30,7 +59,7 @@ const Staging: React.FC = () => {
         handleCountrySelect,
         countryRefs
     } = useCountryFilter<StagingItem>(
-        content.staging.items,
+        stagingItems,
         content.staging.title
     );
 

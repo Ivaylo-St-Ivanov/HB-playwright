@@ -1,0 +1,175 @@
+[
+    {
+        "country": {
+            "en": "Austria",
+            "bg": "Австрия",
+            "es": "Austria",
+            "de": "Österreich"
+        },
+        "cities": [
+            {
+                "name": {
+                    "en": "Vienna",
+                    "bg": "Виена",
+                    "es": "Viena",
+                    "de": "Wien"
+                },
+                "reviews": [
+                    {
+                        "title": {
+                            "en": "",
+                            "bg": "",
+                            "es": "",
+                            "de": ""
+                        },
+                        "text": "Cornelia Niedermeier, \"Der Vogelflung der Phantasie\", Der Standart, January 25, 1999\n\nMatthias Greuling, \"Pulverfass Irrehauss\", Die Neue Furche\n\n\"Flieg, Oberst, flieg!\", ORF o1 Magazin, January 22, 1999\n\n\"Balkan Blues erstmals im deutschen Sprachraum\", January 27, 1999\n\n\"Groteske im Irrenhaus\", Kronen Zeitung, January 25, 1999\n\n\"Militar und Irrenhaus\", Neue Zeit, January 23, 1999\n\nLona Chernel, \"Vom Irrwitz in der Welt\", Wiener Zeitung, January 25, 1999\n\n\"Beflugelter Balkan Blues\", Die Presse, January 25, 1999\n\nR. Wagner, \"Botschaft der Sehnsucht\", Neues Volksblatt, January 28, 1999\n\n\"Grotesker Gruss des Balkans\", Kurier, February 4, 1999"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": {
+            "en": "Czech Republic",
+            "bg": "Чешка република",
+            "es": "República Checa",
+            "de": "Tschechische Republik"
+        },
+        "cities": [
+            {
+                "name": {
+                    "en": "Prague",
+                    "bg": "Прага",
+                    "es": "Praga",
+                    "de": "Prag"
+                },
+                "reviews": [
+                    {
+                        "title": {
+                            "en": "",
+                            "bg": "",
+                            "es": "",
+                            "de": ""
+                        },
+                        "text": "Marina Castelova, \"Plukovnik Ptak oslavuje NATO a 40 let Divadla Na Zabradli\", Lidove noviny, 11 December, 1998\n\n\"Je dobre umet bibnout az do skonani, rika reziser Petr Lebl\", MF DNES, 8 December, 1998\n\nRadka Prchalova, \"Divadlo Na Zabradli zije hlavne Bulharskem a vstupem do NATO\", MF DNES, 10 October, 1998"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": {
+            "en": "Yugoslavia",
+            "bg": "Югославия",
+            "es": "Yugoslavia",
+            "de": "Jugoslawien"
+        },
+        "cities": [
+            {
+                "name": {
+                    "en": "Belgrade",
+                    "bg": "Белград",
+                    "es": "Belgrado",
+                    "de": "Belgrad"
+                },
+                "reviews": [
+                    {
+                        "title": {
+                            "en": "",
+                            "bg": "",
+                            "es": "",
+                            "de": ""
+                        },
+                        "text": "Ivan Medenitza, \"Puchka comedia\", Politica, April 6, 1998\n\nJelko Yovanovich, \"Poslushni voynitzi zlih gospodara\", Nasha borba, April 8, 1998\n\nPetar Volk, \"Pukovnik ptitza\", Illustrovana politica, April 12, 1998\n\nM.O. Dragash, \"Let iznad srtza Balkana\", Beogradske novine, May 22, 1998\n\n\"Sezoni i zamahi\", Nezavisni, April 10, 1998\n\nAleksandar Milosavlevich, \"Tri sna o srechi\", Vreme, April 18, 1998\n\n\"Ludazi marshirayu\", Dnevni telegraf, April 7, 1998\n\nDragina Boshkovich, \"Petdeset godina i simbolichno\", Politica Express, April 4, 1998\n\nJelko Hubach, \"Velika igra\", Danas, April 4, 1998\n\nMiloslav Mirkovich, \"Potroshena metafora\", Vecherne novosti, April 4, 1998\n\nSl. Vuchkovich, \"Ko ye ovde lud?\", Novosti, April 4, 1994\n\nVladimir Stamenkovich, \"Angajman dushe\", NIN, April 9, 1998"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": {
+            "en": "USA",
+            "bg": "САЩ",
+            "es": "Estados Unidos",
+            "de": "USA"
+        },
+        "cities": [
+            {
+                "name": {
+                    "en": "California",
+                    "bg": "Калифорния",
+                    "es": "California",
+                    "de": "Kalifornien"
+                },
+                "reviews": [
+                    {
+                        "title": {
+                            "en": "THEATER | REVIEW Vol. 6 No. 11 November 17 -23, 2000",
+                            "bg": "THEATER | REVIEW Vol. 6 No. 11 November 17 -23, 2000",
+                            "es": "THEATER | REVIEW Vol. 6 No. 11 November 17 -23, 2000",
+                            "de": "THEATER | REVIEW Vol. 6 No. 11 November 17 -23, 2000"
+                        },
+                        "text": "One Crazy Bird\nby Joel Beers\n\nWhile the state incarcerates and ignores the insane, art has often treated them as they were generally treated in the Middle Ages. According to Michel Foucault’s groundbreaking Madness and Civilization, before the advent of the Age of Reason, the mad were viewed as fools; idiot or criminal, they nonetheless possessed a kind of secret knowledge of a world unbound by reason and morality.\n\nShakespeare’s Fool in King Lear, Cervantes’ Don Quixote and Ken Kesey’s Randall P. MacMurtry are three popular examples. Add to this list Fetisov, the heroic colonel in Bulgarian playwright Hristo Boytchev’s farce, The Colonel Bird.\n\nSet against the backdrop of the Balkan wars of the 1990s, Boytchev’s farce begins in a decrepit monastery in an isolated mountain region. Even the nuns have fled, leaving behind six charges in various states of madness. A supposed doctor (a suitably wry Chris McCool) whose madness truly is chemical—he’s a junkie—is assigned to work with the patients.\n\nWhat truly sets things into motion is the discovery of dozens of United Nations humanitarian-aid boxes mistakenly dropped in the vicinity of the monastery. Among the candy bars and powdered milk are genuine-issue United Nations peacekeeping uniforms. This discovery transforms a previously catatonic patient, a former Russian colonel (a commanding Carl Reggiardo), into a man possessed of firm conviction and noble aspirations. He declares the monastery a free state. Of course, he’s absolutely nuts. But he’s gloriously nuts. The strength of his vision is potent enough to liberate and motivate his fellow patients into a quixotic quest across the war-ravaged Balkans in order to meet their destinies as free men and women in the so-called free West.\n\nIt’s a fascinating setup that never quite realizes its potential. The play suffers from structural deficiencies: halfway through, the engaging doctor becomes a dramatic afterthought. Still, it’s a provocative, entertaining piece of theater with plenty to occupy the brain.\n\nDirector Adrian Giurgea supplies an intriguing vision in this California Repertory production. The Edison Theatre is laid out with seats on either side of the space; the action takes place in the middle. This forces the audience to look down on the action, creating an experience like something out of a Roman gladiator fight. (Insert appropriate props here for set designer Walid Ameer and light designer Michael Schrupp.)\n\nGiurgea captures a gloomy, foreboding tone that makes the play’s darkly ironic humor funnier. Giurgea also elicits strong performances from the talented ensemble, all of whom have ample moments to shine.\n\nThe honest performances and firm direction add to the mix in this already rich play. It may take a long time to really get going, but The Colonel Bird offers an often fascinating ride that carries the viewer to places all too often dismissed by most playwrights —including our most basic concepts of sanity. Like others in this genre of madness, Boytchev’s play seems to reject a firm line between sanity and insanity. Set against the backdrop of war, his characters’ idealistic quest for community with the larger \"sane\" world outside is all the more poignant. How can any civilization that regularly engages in the irrational abomination of war call a person insane when his only crime is hiding beneath a bed because he’s afraid he’ll be stepped on? The answer, of course, is that in good conscience, it can’t. The sad reality is that it does.\n\nIt’s all about power, as Foucault argued. And power is what these abandoned and forgotten patients lack—until their crazy colonel gives it to them by convincing them that the world they inhabit, while not accessible to the so-called sane, is just as valid, just as real and just as valuable. And ultimately and sadly, just as impossible to live in peacefully.\n\nCOLONEL BIRD BY California REPertory AT THE EDISON THEATRE"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "en": "Pittsburgh",
+                    "bg": "Питсбърг",
+                    "es": "Pittsburgh",
+                    "de": "Pittsburgh"
+                },
+                "reviews": [
+                    {
+                        "title": {
+                            "en": "",
+                            "bg": "",
+                            "es": "",
+                            "de": ""
+                        },
+                        "text": "BY\nDAVID SALLINGER,\nDaily News Entertainment Editor September 19, 2000\n\nWhen lunatics are running the asylum, you generally have cause for concern. Sometimes, however, lunatics have the right idea.\na.. What: “The Colonel Bird”\nb.. Where: Pittsburgh Playhouse\nc.. When: Through Oct. 8\nd.. Box Office: 412-621-4445\nThat’s one of the underlying themes in “The Colonel Bird,” kicking off Pittsburgh Playhouse Repertory Company’s season.\nSet in the political loony bin that’s the Balkans, “Colonel Bird” deals with a faux doctor who does his best doctoring by doing the least. He’s largely an observer/convert as a messianic soldier causes fellow inmates to toe the line and seek unity (birds of a feather) with the whole of mankind.\n“Line” is the operative word. The Colonel hands his disturbed troops a line that happens to jive nicely with Judeo-Christian thought. He also promotes the military concept of shortest distance between two points (thin red line, long gray line, line in the sand...), one that, in this particular case, is a lifeline.\nThe idea is that society needs rules; the military, through inherent control, requires that rules be followed. The army, then, can be a force for salvation rather than destruction. It also can be a threat: when non-uniformed control fails, those who wave the flag may be tempted to step in and take control.\nThe doctor/narrator (John Amplas), who has problems of his own, is assigned to an out-of-the-line-of-fire storage facility for mental patients. It’s kind of like dropping into prison with the “Man of La Mancha,” because the result basically is the same: man with a plan focuses the masses, who proceed on a spiritual crusade.\nReveling in the absurdity of their situation are the patients whose lives are altered by manna from the heavens, led by the always fun Joe Schulz as the Actor, John Gresh as the Thief, Philip Winters as the Corporal and Kevin Lageman as the wee little guy.\nOne part of the set is the doctor’s office, which looks as though it was whited-out by the powers that were. Main play area is a collapsed monastery (symbolic of the crumbling of the Yugoslav confederation), whose Rube Goldberg-like reassembly represents reconciliation.\nOr, restoring what once had been suggests Lincoln was right: a house divided can’t be driven down the street (take my word for it, that makes sense). And whoever thought that dropping the Playhouse temperature to late February levels should be commended for the goosebump-inspiring special effect.\nBottom Lines: “The Colonel Bird,” which drags on a little too long, perches on the line that an enforced uniting of ethnic groups is likely to result in conflict, but that the idea of a united nations, in which membership is voluntary, is worth ignoring borders to achieve.\nFor all its flights of fancy, “Bird” takes solid shots at geopolitics, argues that feelings of impotence can be salved by governmental intervention. Playwright Hristo Boytchev obviously agrees with the above-mentioned man from La Mancha’s position that it’s madder to see life as it is rather than as it should be."
+                    },
+                    {
+                        "title": {
+                            "en": "Entertainment - The Arts - September 19, 2000",
+                            "bg": "Entertainment - The Arts - September 19, 2000",
+                            "es": "Entertainment - The Arts - September 19, 2000",
+                            "de": "Entertainment - The Arts - September 19, 2000"
+                        },
+                        "text": "Playhouse opens season with vibrant `Colonel Bird'\nBy Alice T. Carter\nTRIBUNE-REVIEW THEATER CRITIC\n\nEvery great society is a game with set rules, explains a character in \"The Colonel Bird.\" To be considered sane, all you have to do is obey those rules.\n\nThat's the organizing principle behind Hristo Boytchev's \"The Colonel Bird,\" which had its American premiere as the opening production of the Pittsburgh Playhouse Repertory Company's 2000-01 season. In it, the inmates of an insane asylum in an isolated monastery somewhere in the Balkans save their sanity by learning to function as a UN Task Force. The philosophy is, of course, as plausible as it is unworkably simplistic: Just tell that patient to stop listening to those voices in his head. That's like suggesting that all that's needed for world peace is for people to get along with each other.\nThe \"what\" is easy to articulate. It's the \"how\" that's tricky to implement.\nOf course, Boytchev doesn't expect to be taken literally. His Balkan insane asylum and its inmates are a microcosm and metaphor for the political bedlam that's been raging more or less continually in that southeast corner of Europe since at least the early 1800s and at regular intervals around the world since the Tower of Babel failed its stress test. A fake doctor down to his last 10 ampules of morphine takes over an isolated asylum in the mountains of Bosnia/Herzegovina/Serbia/Montenegro or thereabouts. His haphazard attempts to create order fail as inmates wait for supplies from a relief truck that will never arrive. Crates of uniforms and food are mistakenly dropped nearby. The patients don the clothing and are mistaken for soldiers by a paranoid schizophrenic who imagines himself as a colonel. He organizes them into a self-proclaimed nation, and they set out to establish diplomatic links.\nDirector Jonathan Eaton succeeds best when he plays out this tale seriously and simply. The show is least successful when it lapses into total metaphor with Scott Wise's choreography in the second act. Eight dancers clad in white wispy costumes emerge brandishing feathery doves on long poles overhead. It's a poetic, visually hopeful moment, but an unnecessary distraction. He's also supported by Danila Korogodsky's expressionistic set, which begins as a stage littered with a jumble of towers and walls that are used for beds and other furniture. Andrew David Ostrowski's evocative lighting plays nicely off the rising mists of the opening scene, then supports the mood shifts from dejected resignation to confident action.\nAs order gains supremacy, the pieces assemble themselves into a miniature monastery and then transform into the tank that transports this diplomatic band into the larger world. But the real interest in this piece is in its performances. Eaton is blessed with a company of talented, committed professional performers who bring nuance and understanding to their characters. Kevin Lageman and Philip Winters turn in remarkably fine performances subtly shaded with minute details and never flagging reality. Joe Schulz's performance as the actor-turned-soldier is as restrained as it is rewarding to watch. Mary Rawson's customs office/whore travels the greatest emotional arc in a distinctly rendered, perceptive performance that would be difficult to ignore even if she were not the play's sole female performer.\nJohn Amplas functions seamlessly as the play's narrator and the fake doctor who surrenders willingly to the madness swirling around him. John Shepard retains total command as the seemingly sane Colonel who galvanizes the action.\nAs a dramatic work, \"The Colonel Bird\" breaks no new dramatic ground. But it's a stimulating and vibrant showcase for its professional company."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "country": {
+            "en": "England",
+            "bg": "Англия",
+            "es": "Inglaterra",
+            "de": "England"
+        },
+        "cities": [
+            {
+                "name": {
+                    "en": "London",
+                    "bg": "Лондон",
+                    "es": "Londres",
+                    "de": "London"
+                },
+                "reviews": [
+                    {
+                        "title": {
+                            "en": "The Colonel Bird Gate Theatre, London W11",
+                            "bg": "The Colonel Bird Gate Theatre, London W11",
+                            "es": "The Colonel Bird Gate Theatre, London W11",
+                            "de": "The Colonel Bird Gate Theatre, London W11"
+                        },
+                        "text": "A play set on the Serbian border where Nato planes fly overhead on bombing missions cannot be faulted for being out of date, Jeremy Kingston writes. It so happens that the targets lie in Bosnia, but since Balkan history always alternates between despotism and slaughter, it is no surprise to learn that the play is supposed to be set in the year 2000. This year Kosovo, next year Macedonia: death's carousel sometimes whirls faster but never stops going round.\nHristo Boytchev is from Bulgaria, a country currently at peace, and though the war next door impinges on his characters, its battles remain offstage. Most of the play is set in the ruins of a monastery, cut off by snowdrifts and wolves at the far end of a gorge, where half a dozen mental patients live a degraded life until a disorientated UN plane deluges them with aid parcels. \"The Balkans are all the same to them,\" one of the inmates shrewdly points out. \"They were told to drop aid on the Balkans, so that's what they've done.\"\nCombat uniforms and sky-blue berets are included in the aid, and these transform the most traumatised patient (Damian Myerscough) into a UN colonel, who in turn transforms the others into a disciplined and purposeful group, though all of them continue to be mad. Eventually the group applies to join Nato as an independent force, attaching their application to the leg of a migrating bird and scanning the winter skies for an answer.\nWith Nato seen as an all-providing god, what we have here is plainly an allegory for Eastern Europe's longing to join the banquet. Boytchev is not concerned to examine the nature of madness - the Gate's current season is called The Idiots - except insofar as a wish to join the West might be a disturbing symptom. So the disorganised mad behaviour at the start is something of a trial to watch.\nOnce the madness is canalised into Lilliputian ambition, Rupert Goold's direction creates an impressive coherence. The bird-catching scenes are exciting, with the characters huddling together and leaning back in unison when the flocks pass above them. Adam Cork's fast, jangling music also gives a fine sense of adrenalin pounding through the system, and though the characters are seldom more than two-dimensional, the performances are vigorous, while the closing scene, in Strasbourg's cathedral square, packs a hearty satiric punch."
+                    }
+                ]
+            }
+        ]
+    }
+]

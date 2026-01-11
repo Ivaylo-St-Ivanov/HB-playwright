@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { motion } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
 import { useCountryFilter } from '../hooks/useCountryFilter';
+import { useLocalizedData } from '../hooks/useLocalizedData';
+import type { ReviewCountryData, ReviewCityData, LocalizedValue } from '../types/data';
+import reviewsData from '../data/reviews.json';
+
 import StickyCountryFilter from '../components/StickyCountryFilter';
 
 interface ReviewItem {
@@ -19,8 +23,32 @@ interface ReviewCountry {
 const Review: React.FC = () => {
     const { content } = useLanguage();
 
+    // Transform logic for reviews
+    const transformReviewCity = useCallback((
+        countryName: string,
+        cityName: string,
+        cityData: ReviewCityData,
+        getLocalized: (val: LocalizedValue) => string
+    ) => {
+        const reviews = cityData.reviews.map((review) => ({
+            title: getLocalized(review.title),
+            text: review.text
+        }));
+
+        return [{
+            country: countryName,
+            city: cityName,
+            reviews: reviews
+        }];
+    }, []);
+
+    // Use the shared hook for data transformation
+    const reviewItems = useLocalizedData<ReviewCountryData, ReviewCountry>(
+        reviewsData as ReviewCountryData[],
+        transformReviewCity
+    );
+
     // Use the custom hook for filtering logic
-    // We need to cast items to ReviewCountry[] because the JSON structure might be inferred loosely
     const {
         countries,
         itemsByCountry,
@@ -28,7 +56,7 @@ const Review: React.FC = () => {
         handleCountrySelect,
         countryRefs
     } = useCountryFilter<ReviewCountry>(
-        content.review.items as unknown as ReviewCountry[],
+        reviewItems,
         content.review.title
     );
 
