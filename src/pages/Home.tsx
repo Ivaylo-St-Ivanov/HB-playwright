@@ -15,7 +15,7 @@ const Home: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        const intervalDuration = showIntro ? 8000 : 3000; // 8s for intro, 3s for title
+        const intervalDuration = showIntro ? 8000 : 4000; // 8s for intro, 4s for title
         const timer = setTimeout(() => {
             setShowIntro((prev) => !prev);
         }, intervalDuration);
@@ -44,6 +44,7 @@ const Home: React.FC = () => {
                     >
                         <h1 className="hero__title">{content.home.title}</h1>
                         <h2 className="hero__subtitle">{content.home.subtitle}</h2>
+                        <h3>{content.home.subtitle_2}</h3>
                     </motion.div>
                 ) : (
                     <motion.div

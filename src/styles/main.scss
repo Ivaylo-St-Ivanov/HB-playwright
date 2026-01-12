@@ -40,13 +40,15 @@ body {
     transition: background-color $transition-normal, color $transition-normal;
 
     &.home-page-theme {
-        --color-bg: #0f0f0f;
-        --color-text: #f0f0f0;
-        --color-accent: #d4af37;
-        --color-secondary: #888;
-        --color-surface: #1a1a1a;
-        --color-border: rgba(240, 240, 240, 0.1);
-        --color-contact-logo: #606060;
+        @media (min-width: 769px) {
+            --color-bg: #0f0f0f;
+            --color-text: #f0f0f0;
+            --color-accent: #d4af37;
+            --color-secondary: #888;
+            --color-surface: #1a1a1a;
+            --color-border: rgba(240, 240, 240, 0.1);
+            --color-contact-logo: #606060;
+        }
     }
 }
 
