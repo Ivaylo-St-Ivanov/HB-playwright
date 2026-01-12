@@ -186,7 +186,7 @@
     height: 100vh;
     background: $color-surface;
     z-index: 1050;
-    padding: $spacing-lg;
+    padding: $spacing-lg $spacing-lg $spacing-sm $spacing-lg;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
