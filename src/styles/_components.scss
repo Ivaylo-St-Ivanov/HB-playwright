@@ -30,6 +30,8 @@
         font-size: 1.5rem;
         font-weight: 700;
         background: linear-gradient(175deg, #000 0%, #DAA520 60%, #000 100%);
+        background-size: 100%;
+        background-repeat: no-repeat;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -38,6 +40,8 @@
 
         [data-theme="dark"] & {
             background: linear-gradient(175deg, #fff 0%, #DAA520 60%, #fff 100%);
+            background-size: 100%;
+            background-repeat: no-repeat;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;

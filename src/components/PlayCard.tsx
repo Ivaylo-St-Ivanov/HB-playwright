@@ -68,7 +68,6 @@ const PlayCard: React.FC<PlayCardProps> = ({ play, language, handleLanguageClick
                 transition={{ delay: index * 0.1 }}
                 style={{
                     transform,
-                    transformStyle: "preserve-3d",
                 }}
             >
                 <div className="play-card__inner">
