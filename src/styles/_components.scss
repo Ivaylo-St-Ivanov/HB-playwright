@@ -338,12 +338,17 @@
     text-align: center;
     padding: calc(80px + $spacing-lg) $spacing-md $spacing-lg;
     background-color: var(--color-bg);
-    background-image: url('https://dictionarylit-bg.eu/files/photos/thumbs/Hristo%20Bichev.jpg');
+    background-image: url("src/assets/head.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 85% 50%;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
+
+    @include mobile {
+        background-image: url('https://dictionarylit-bg.eu/files/photos/thumbs/Hristo%20Bichev.jpg');
+        background-position: 50% 50%;
+    }
 
     &::before {
         content: '';

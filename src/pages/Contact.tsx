@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
 
-import hbLogo from '../assets/hb_logo.png';
+import hbLogo from '/favicon.png';
 
 const Contact: React.FC = () => {
     const { content } = useLanguage();
