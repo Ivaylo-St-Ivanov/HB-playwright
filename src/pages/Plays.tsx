@@ -1,24 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
 import plays from '../data/plays.json';
 
 import PlayCard from '../components/PlayCard';
-import PlayModal from '../components/PlayModal';
 
 const Plays: React.FC = () => {
     const { language } = useLanguage();
-    const [selectedPlay, setSelectedPlay] = useState<string | null>(null);
-    const [selectedLang, setSelectedLang] = useState<string | null>(null);
-    const [selectedFullText, setSelectedFullText] = useState<string | null>(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const handleLanguageClick = (playTitle: string, lang: string, fullText: string) => {
-        setSelectedPlay(playTitle);
-        setSelectedLang(lang);
-        setSelectedFullText(fullText);
-        setIsModalOpen(true);
+    const handleLanguageClick = (playTitle: string, lang: string, downloadUrl?: string) => {
+        if (!downloadUrl) {
+            console.warn(`No download URL found for ${playTitle} - ${lang}`);
+            return;
+        }
+
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+
+        // Extract filename from URL for download attribute
+        const filename = downloadUrl.split('/').pop() || 'document.doc';
+        link.download = filename;
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     return (
@@ -42,14 +49,6 @@ const Plays: React.FC = () => {
                     />
                 ))}
             </div>
-
-            <PlayModal
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-                playTitle={selectedPlay || ''}
-                languageName={selectedLang || ''}
-                fullText={selectedFullText || ''}
-            />
         </div>
     );
 };

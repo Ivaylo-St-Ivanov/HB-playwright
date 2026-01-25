@@ -4,7 +4,7 @@ import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 interface PlayCardProps {
     play: any;
     language: string;
-    handleLanguageClick: (playTitle: string, lang: string, fullText: string) => void;
+    handleLanguageClick: (playTitle: string, lang: string, downloadUrl?: string) => void;
     index: number;
 }
 
@@ -94,7 +94,7 @@ const PlayCard: React.FC<PlayCardProps> = ({ play, language, handleLanguageClick
                                         onClick={() => handleLanguageClick(
                                             play.title[language as keyof typeof play.title],
                                             langObj.name,
-                                            langObj.text
+                                            langObj.downloadUrl
                                         )}
                                     >
                                         {langObj.name}
