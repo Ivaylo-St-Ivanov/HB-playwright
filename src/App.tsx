@@ -12,6 +12,7 @@ import Biography from './pages/Biography';
 import Staging from './pages/Staging';
 import FestivalsAndPrizes from './pages/FestivalsAndPrizes';
 import Review from './pages/Review';
+import { MigrationTest } from './pages/MigrationTest';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="staging" element={<Staging />} />
               <Route path="festivals-and-prizes" element={<FestivalsAndPrizes />} />
               <Route path="review" element={<Review />} />
+              <Route path="migration-test" element={<MigrationTest />} />
             </Route>
           </Routes>
         </BrowserRouter>

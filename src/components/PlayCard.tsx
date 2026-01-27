@@ -82,7 +82,10 @@ const PlayCard: React.FC<PlayCardProps> = ({ play, language, handleLanguageClick
                     </p>
                     <div className="play-card__languages">
                         <span className="play-card__languages-label">
-                            {language === 'en' ? 'Available in: ' : 'Налична на: '}
+                            {language === 'en' && 'Available in: '}
+                            {language === 'bg' && 'Налична на: '}
+                            {language === 'es' && 'Disponible en: '}
+                            {language === 'de' && 'Verfügbar auf: '}
                         </span>
                         <div className="play-card__languages-list">
                             {play.languages.map((langObj: any, langIndex: number) => (
