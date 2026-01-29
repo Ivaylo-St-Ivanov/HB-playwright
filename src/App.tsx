@@ -12,6 +12,7 @@ import Biography from './pages/Biography';
 import Staging from './pages/Staging';
 import FestivalsAndPrizes from './pages/FestivalsAndPrizes';
 import Review from './pages/Review';
+import AdminApp from './admin/App';
 import { MigrationTest } from './pages/MigrationTest';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Route path="review" element={<Review />} />
               <Route path="migration-test" element={<MigrationTest />} />
             </Route>
+            <Route path="/admin/*" element={<AdminApp />} />
           </Routes>
         </BrowserRouter>
       </LanguageProvider>
