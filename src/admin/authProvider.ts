@@ -27,14 +27,24 @@ const authProvider: AuthProvider = {
     checkError: ({ status }) => {
         if (status === 401 || status === 403) {
             Parse.User.logOut();
-            return Promise.reject();
+            localStorage.removeItem('login_timestamp');
+            return Promise.reject({ redirectTo: '/admin/login' });
         }
         return Promise.resolve();
     },
     // Called when the user navigates to a new location, to check for authentication
     checkAuth: () => {
-        const user = Parse.User.current();
-        if (!user) return Promise.reject();
+        try {
+            const user = Parse.User.current();
+
+            // If no user is logged in, reject with a redirect to /admin/login
+            if (!user) {
+                return Promise.reject({ redirectTo: '/admin/login' });
+            }
+        } catch (e) {
+            console.error("Error in checkAuth:", e);
+            return Promise.reject({ redirectTo: '/admin/login' });
+        }
 
         // Enforce 18-hour session limit
         const loginTimestamp = localStorage.getItem('login_timestamp');
@@ -44,7 +54,7 @@ const authProvider: AuthProvider = {
             if (now - parseInt(loginTimestamp, 10) > eighteenHours) {
                 Parse.User.logOut();
                 localStorage.removeItem('login_timestamp');
-                return Promise.reject();
+                return Promise.reject({ redirectTo: '/admin/login' });
             }
         }
 
@@ -52,17 +62,31 @@ const authProvider: AuthProvider = {
     },
     // Called when the user navigates to a new location, to check for permissions / roles
     getPermissions: () => {
-        const user = Parse.User.current();
-        return user ? Promise.resolve(user.get('role')) : Promise.reject();
+        try {
+            // Check if Parse is initialized, though unexpected to be uninitialized here
+            if (!Parse.applicationId) {
+                console.error("Parse not initialized in getPermissions!");
+                return Promise.reject({ redirectTo: '/admin/login' });
+            }
+            const user = Parse.User.current();
+            return user ? Promise.resolve(user.get('role')) : Promise.reject({ redirectTo: '/admin/login' });
+        } catch (e) {
+            console.error("Error in getPermissions:", e);
+            return Promise.reject({ redirectTo: '/admin/login' });
+        }
     },
     // Optional: returns current user identity (name, avatar, etc.)
     getIdentity: () => {
-        const user = Parse.User.current();
-        if (user && user.id) {
-            return Promise.resolve({
-                id: user.id,
-                fullName: user.get('username'),
-            });
+        try {
+            const user = Parse.User.current();
+            if (user && user.id) {
+                return Promise.resolve({
+                    id: user.id,
+                    fullName: user.get('username'),
+                });
+            }
+        } catch (e) {
+            console.error("Error in getIdentity:", e);
         }
         return Promise.reject();
     },

@@ -89,6 +89,39 @@ const dataProvider: DataProvider = {
         const query = new Parse.Query(Class);
         const obj = await query.get(params.id as string);
 
+        // --- Delete files for removed language entries ---
+        if (resource === 'Play') {
+            const prevLanguages: any[] = params.previousData?.languages ?? [];
+            const nextLanguages: any[] = params.data?.languages ?? [];
+
+            // Build a set of file URLs that still exist in the new data
+            const nextFileUrls = new Set(
+                nextLanguages
+                    .map((l: any) => l.file?.url || l.downloadUrl)
+                    .filter(Boolean)
+            );
+
+            // Find languages that were removed (their file URL is no longer present)
+            const removedLanguages = prevLanguages.filter((l: any) => {
+                const url = l.file?.url || l.downloadUrl;
+                return url && !nextFileUrls.has(url);
+            });
+
+            // Delete the associated Parse files via Cloud Function (requires server-side master key)
+            await Promise.allSettled(
+                removedLanguages.map(async (l: any) => {
+                    try {
+                        const fileName = l.file?.name || l.name;
+                        if (fileName) {
+                            await Parse.Cloud.run("deleteFile", { fileName });
+                        }
+                    } catch (e) {
+                        console.warn('Could not delete file for removed language entry:', e);
+                    }
+                })
+            );
+        }
+
         // Handle file uploads
         const data = await uploadFiles(params.data);
 

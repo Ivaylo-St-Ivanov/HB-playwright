@@ -38,17 +38,7 @@ const Plays: React.FC = () => {
             return;
         }
 
-        // Create a link element
-        const link = document.createElement('a');
-        link.href = downloadUrl;
-
-        // Extract filename from URL for download attribute
-        const filename = downloadUrl.split('/').pop() || 'document.doc';
-        link.download = filename;
-
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        window.open(downloadUrl, '_blank', 'noopener,noreferrer');
     };
 
     if (loading) {

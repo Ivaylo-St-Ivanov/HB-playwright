@@ -97,7 +97,7 @@ const PlayCard: React.FC<PlayCardProps> = ({ play, language, handleLanguageClick
                                         onClick={() => handleLanguageClick(
                                             play.title[language as keyof typeof play.title],
                                             langObj.name,
-                                            langObj.downloadUrl
+                                            langObj.file?.url || langObj.downloadUrl
                                         )}
                                     >
                                         {langObj.name}

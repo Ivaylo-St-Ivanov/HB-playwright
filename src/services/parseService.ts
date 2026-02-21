@@ -1,11 +1,19 @@
 import Parse from 'parse';
 
 // Initialize Parse SDK with Back4App credentials
-Parse.initialize(
-    import.meta.env.VITE_BACK4APP_APP_ID,
-    import.meta.env.VITE_BACK4APP_JS_KEY
-);
-Parse.serverURL = 'https://parseapi.back4app.com/';
+const appId = import.meta.env.VITE_BACK4APP_APP_ID;
+const jsKey = import.meta.env.VITE_BACK4APP_JS_KEY;
+
+if (!appId || !jsKey) {
+    console.error("CRITICAL: Back4App App ID or JS Key is missing in environment variables!");
+} else {
+    try {
+        Parse.initialize(appId, jsKey);
+        Parse.serverURL = 'https://parseapi.back4app.com/';
+    } catch (error) {
+        console.error("Error initializing Parse SDK:", error);
+    }
+}
 
 /**
  * Fetch all plays from Back4App
