@@ -14,6 +14,7 @@ import FestivalsAndPrizes from './pages/FestivalsAndPrizes';
 import Review from './pages/Review';
 import AdminApp from './admin/App';
 import { MigrationTest } from './pages/MigrationTest';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <Route path="festivals-and-prizes" element={<FestivalsAndPrizes />} />
               <Route path="review" element={<Review />} />
               <Route path="migration-test" element={<MigrationTest />} />
+              <Route path="*" element={<PageNotFound />} />
             </Route>
             <Route path="/admin/*" element={<AdminApp />} />
           </Routes>

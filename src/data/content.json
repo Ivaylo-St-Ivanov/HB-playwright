@@ -123,6 +123,12 @@
         "review": {
             "title": "Review",
             "subtitle": "There are literally hundreds of reviews and because of their number they cannot be posted on this site. Please look them up in the appropriate language on the Web using the name Hristo Boytchev."
+        },
+        "pageNotFound": {
+            "title": "404",
+            "subtitle": "Page Not Found",
+            "text": "The page you are looking for does not exist.",
+            "back": "Go Back"
         }
     },
     "bg": {
@@ -249,6 +255,12 @@
         "review": {
             "title": "Рецензии",
             "subtitle": "Има буквално стотици рецензии и поради техния брой те не могат да бъдат публикувани на този сайт. Моля, потърсете ги на съответния език в Интернет, като използвате името Христо Бойчев."
+        },
+        "pageNotFound": {
+            "title": "404",
+            "subtitle": "Страницата не е намерена",
+            "text": "Страницата, която търсите, не съществува.",
+            "back": "Назад"
         }
     },
     "es": {
@@ -375,6 +387,12 @@
         "review": {
             "title": "Reseñas",
             "subtitle": "Hay literalmente cientos de reseñas y debido a su número no pueden publicarse en este sitio. Por favor, búsquelas en el idioma apropiado en la Web utilizando el nombre Hristo Boytchev."
+        },
+        "pageNotFound": {
+            "title": "404",
+            "subtitle": "Página no encontrada",
+            "text": "La página que buscas no existe.",
+            "back": "Volver"
         }
     },
     "de": {
@@ -501,6 +519,144 @@
         "review": {
             "title": "Rezensionen",
             "subtitle": "Es gibt buchstäblich Hunderte von Rezensionen, und aufgrund ihrer Anzahl können sie nicht auf dieser Website veröffentlicht werden. Bitte suchen Sie diese in der entsprechenden Sprache im Internet unter dem Namen Hristo Boytchev."
+        },
+        "pageNotFound": {
+            "title": "404",
+            "subtitle": "Seite nicht gefunden",
+            "text": "Die von Ihnen gesuchte Seite existiert nicht.",
+            "back": "Zurück"
+        }
+    },
+    "ru": {
+        "home": {
+            "title": "Христо Бойчев",
+            "subtitle": "Драматург",
+            "subtitle_2": "Более 100 постановок в Европе и Америке",
+            "intro": "Христо Бойчев — один из самых популярных современных европейских драматургов. Его пьесы ставятся в более чем 40 странах."
+        },
+        "navbar": {
+            "logo": "Христо Бойчев",
+            "home": "Главная",
+            "plays": "Пьесы",
+            "contact": "Контакты",
+            "aboutMe": "Обо мне",
+            "aboutLinks": {
+                "biography": "Биография",
+                "staging": "Постановки",
+                "festivalsAndPrizes": "Фестивали и награды",
+                "review": "Рецензии"
+            }
+        },
+        "footer": {
+            "copyright": "Христо Бойчев. Все права защищены."
+        },
+        "contact": {
+            "email": "hbagency@gmail.com",
+            "info": "For rights and inquiries, please contact the author directly."
+        },
+        "biography": {
+            "title": "Биография",
+            "events": [
+                {
+                    "year": "1950",
+                    "text": "Родился в Северной Болгарии"
+                },
+                {
+                    "year": "1974",
+                    "text": "Окончил Высший институт машиностроения, Русе, Болгария, по специальности инженер-механик"
+                },
+                {
+                    "year": "1976 - 1985",
+                    "text": "Работает техническим руководителем и директором завода"
+                },
+                {
+                    "year": "1984",
+                    "text": "Премьера его первой пьесы \"Та вещь\""
+                },
+                {
+                    "year": "1985 - 1989",
+                    "text": "Изучает драматургию в Национальной академии театрального и киноискусства"
+                },
+                {
+                    "year": "1989",
+                    "text": "Назван Драматургом года с 40 постановками его пьес на театральных сценах по всей Болгарии."
+                },
+                {
+                    "year": "1990",
+                    "text": "Премьера первого фильма по его сценарию \"Та вещь\". Начал регулярно участвовать в качестве политического сатирика в одном из самых известных телешоу в Болгарии."
+                },
+                {
+                    "year": "1996",
+                    "text": "Выиграл государственную субсидию на съемки фильма \"Полковник-птица\" по своему сценарию. Автор и ведущий собственного телешоу. Баллотировался на пост президента Республики Болгария. Выделенное телевизионное время было использовано для насмешливого политического хэппенинга (30 дней подряд в прайм-тайм). Набрал около 2% голосов."
+                },
+                {
+                    "year": "1997",
+                    "text": "Награжден Международной премией Британского совета по драматургии за лучшую пьесу в международном конкурсе драматургии за пьесу \"Полковник-птица\". Пьеса была выбрана из более чем 400 пьес со всего мира. Премия была вручена ему в Королевском национальном театре в Лондоне Гарольдом Пинтером. На сегодняшний день пьеса была поставлена более 100 раз в более чем 30 странах мира."
+                },
+                {
+                    "year": "1999",
+                    "text": "ФЕСТИВАЛЬ АВИНЬОН, \"Полковник-птица\" был представлен в программе фестиваля 15 спектаклями \"Theatre de la Commune d'Aubervilliers\", Париж. Награжден престижной итальянской театральной премией Premio \"Enrico Maria Salerno\" per la drammaturgia Europea, 5 Edizione."
+                },
+                {
+                    "year": "2000",
+                    "text": "БОННСКАЯ БИЕННАЛЕ - 2000 - \"Полковник-птица\" был представлен в программе фестиваля театром \"Плевен\". Крестный отец \"Фестиваля новой европейской драмы - Висбаденская биеннале\" с 2000 года."
+                },
+                {
+                    "year": "2006",
+                    "text": "Президент \"Ассоциации болгарских драматургов\"."
+                },
+                {
+                    "year": "2009",
+                    "text": "\"ЗОЛОТАЯ МАСКА\" - Москва - \"Полковник-птица\" был представлен на самом престижном российском фестивале Самарским академическим театром драмы."
+                }
+            ],
+            "additionalInfo": "Пьесы Христо Бойчева ставились в более чем 40 странах на пяти континентах. Его последние пьесы: \"Полковник и птицы\" - женская версия \"Полковника-птицы\", \"Оркестр Титаник\", \"Районная больница\", монодрама \"Феномен\" и \"Иглу\". Он получил авторские права от Εκδόσεις Καζαντζάκη на написание пьесы \"Грек Зорба\" по мотивам известного романа Н. Казандзакиса, а также \"Великий Гэтсби\"."
+        },
+        "staging": {
+            "title": "Staging",
+            "premiere": "Premiere",
+            "director": "Director",
+            "actors": "Actors"
+        },
+        "festivalsAndPrizes": {
+            "title": "Festivals and Prizes",
+            "items": [
+                {
+                    "title": "THE BRITISH COUNCIL INTERNATIONAL PLAYWRITING AWARDS, 1997",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/BreatishConcel.jpg",
+                    "text": "The British Council International Playwriting Award culminated at the award ceremony at the Royal National Theatre on Thursday 13 March. Labelled by the press as the \"Playwrights Olympics\", Harold Pinter presented the prizes to the six regional winners, all of whom were present at the reception, before announcing the overall winner, the decision for which had only been agreed by the judging panel an hour before.\n\nThe overall winner was Bulgarian Hristo Boytchev for his play \"The Colonel Bird\". The play was selected from among 400 plays from all over the world and described by the judges as \"joyful, magical, idiosyncratic, with an inspired comic parable for our times\".\n\n\"On Tour\" - a news bulletin from the British Council's Drama and Dance Unit, June, 1997, N 10"
+                },
+                {
+                    "title": "FESTIVAL D'AVIGNON, 1999 (Jun,10 - Jun,20)",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/avignon.jpg",
+                    "text": "The play has been performed since 01.07 till 21.07 at the \"CLOITRE DES CARMES\" by \"Theatre de la Commune d'Aubervilliers\""
+                },
+                {
+                    "title": "BONNER BIENNALE - 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/bon.jpg",
+                    "text": "Flieg Fluger, flieg... \"( The Colonel Burd )\" performed by Theatre Pleven - Bulgaria"
+                },
+                {
+                    "title": "Premio \"ENRICO MARIA SALERNO\" 1999, Roma",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/salerno.jpg",
+                    "text": "The competition is open to dramatic works addressing civil, moral, ethical, or political issues in the form of drama or comedy. Manuscripts, in 8 copies, must reach the Prize Secretariat by June 30, 1999, at: Centro Studi \"Enrico Maria Salerno\", via Montefiore 86, 00060, Castelnuovo di Porto - Rome, telephone 06/9079216. The winner will be awarded a Prize of 5,000,000 Lire; furthermore, the winning work will receive an endowment of 40,000,000 Lire for its stage production. The second-placed work will be awarded with publication."
+                },
+                {
+                    "title": "MITTELFEST - PROGETTO SPECIALE, Italy, 2000",
+                    "image": "http://www.hristoboytchev.com/images/nagradi/mittel.jpg",
+                    "text": "by Hristo Boytchev Sunday, July 23rd 19:00 - Teatro Ristori Italian edition directed by and starring Toni Bertorelli CO-PRODUCTION COMPAGNIA CICLOPE, Q.P. PRODUZIONI - TURIN AND MITTELFEST IN COLLABORATION WITH THEATRE PRIZE 'ENRICO MARIA SALERNO'\n\n The project continues Monday, July 24th, 19:00 - Teatro Ristori THE COLONEL BIRD (IL COLONNELLO CON LE ALI) Czech edition directed by Petr Lebl THEATRE NA ZABRADLI\n\nThe inmates of a lunatic asylum, seven human wrecks left on the summit of a remote mountain, seven outcasts from an outcast country on the edge of the new Europa Felix, undergo a miraculous recovery when one of their number, an old Red Army general, decides to enlist them in the new European Army and march on Strasbourg. Europe as a common home, as redemption, or as psychiatric therapy? Imagination, irony and originality are the basis of the great European success of the Bulgarian author, Hristo Boytchev and this play which Mittelfest presents in two interpretations.\n\nIn the Italian edition the direction and the leading role are by Toni Bertorelli, a product of the Carlo Cecchi school, who is an exceptional player of parts on the border between tragedy and comedy. The performance is staged with the support of the Premio Enrico Maria Salerno, an award for socially-committed drama won by Boytchev in 1999."
+                }
+            ]
+        },
+        "review": {
+            "title": "Review",
+            "subtitle": "There are literally hundreds of reviews and because of their number they cannot be posted on this site. Please look them up in the appropriate language on the Web using the name Hristo Boytchev."
+        },
+        "pageNotFound": {
+            "title": "404",
+            "subtitle": "Страница не найдена",
+            "text": "Страница, которую вы ищете, не существует.",
+            "back": "Вернуться"
         }
     }
 }

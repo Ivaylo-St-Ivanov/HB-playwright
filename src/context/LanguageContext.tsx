@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect, type ReactNode }
 
 import contentData from '../data/content.json';
 
-type Language = 'en' | 'bg' | 'es' | 'de';
+type Language = 'en' | 'bg' | 'es' | 'de' | 'ru';
 
 interface LanguageContextType {
     language: Language;
