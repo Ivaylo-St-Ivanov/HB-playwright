@@ -34,6 +34,28 @@ export const bgMessages: TranslationMessages = {
                 'languages.file': 'Файл'
             },
         },
+        BiographyEvent: {
+            name: 'Събитие (Биография) |||| Събития (Биография)',
+            fields: {
+                order: 'Поредност',
+                year: 'Година',
+                text_bg: 'Текст (Български BG)',
+                text_en: 'Текст (Английски EN)',
+                text_es: 'Текст (Испански ES)',
+                text_de: 'Текст (Немски DE)',
+                text_ru: 'Текст (Руски RU)',
+            },
+        },
+        BiographyInfo: {
+            name: 'Доп. информация (Биография)',
+            fields: {
+                text_bg: 'Текст (Български BG)',
+                text_en: 'Текст (Английски EN)',
+                text_es: 'Текст (Испански ES)',
+                text_de: 'Текст (Немски DE)',
+                text_ru: 'Текст (Руски RU)',
+            }
+        }
     },
     custom: {
         titles: {
@@ -51,6 +73,7 @@ export const bgMessages: TranslationMessages = {
             genre_bg: 'Жанр (BG)',
             id_example: 'ID (напр. colonel-bird)',
             current_file: 'Текущ файл',
+            order_info: 'Определя реда на показване (напр. 1, 2, 3...)',
         },
         errors: {
             invalid_login: 'Невалидно потребителско име или парола',
