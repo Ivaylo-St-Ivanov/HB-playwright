@@ -7,6 +7,7 @@ import { useLocalizedData } from '../hooks/useLocalizedData';
 import type { StagingCountryData, StagingCityData, LocalizedValue } from '../types/data';
 import stagingsData from '../data/stagings.json';
 
+import SidebarCountryFilter from '../components/SidebarCountryFilter';
 import StickyCountryFilter from '../components/StickyCountryFilter';
 import StagingCard from '../components/StagingCard';
 
@@ -64,7 +65,13 @@ const Staging: React.FC = () => {
     );
 
     return (
-        <>
+        <div className="staging-layout">
+            <SidebarCountryFilter
+                countries={countries}
+                selectedCountry={selectedCountry}
+                onSelect={handleCountrySelect}
+            />
+
             <motion.div
                 key={`${content.staging.title}-filter`}
                 initial={{ opacity: 0 }}
@@ -130,7 +137,7 @@ const Staging: React.FC = () => {
                     );
                 })}
             </motion.div>
-        </>
+        </div>
     );
 };
 

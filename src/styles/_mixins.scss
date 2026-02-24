@@ -12,6 +12,12 @@
     }
 }
 
+@mixin desktop {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
 @mixin container {
     max-width: 1200px;
     margin: 0 auto;

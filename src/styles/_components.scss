@@ -497,6 +497,10 @@
     padding: $spacing-xs;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
+    @include desktop {
+        display: none;
+    }
+
     // Initial state: smaller and slightly transparent
     transform: scale(0.75);
     opacity: 0.8;
@@ -641,6 +645,60 @@
             font-weight: 600;
             background: rgba($color-accent, 0.05);
         }
+    }
+}
+
+// Sidebar Country Filter (Desktop only)
+.sidebar-filter {
+    display: none;
+    width: 280px;
+    flex-shrink: 0;
+    padding: $spacing-xl $spacing-lg;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    border-right: 1px solid rgba($color-text, 0.1);
+    margin-right: $spacing-xl;
+
+    @include desktop {
+        display: block;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        padding: $spacing-sm;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: all $transition-fast;
+        border-radius: 8px;
+        margin-bottom: 2px;
+        color: rgba($color-text, 0.8);
+
+        &:hover {
+            background: rgba($color-accent, 0.1);
+            color: $color-accent;
+        }
+
+        &--active {
+            color: $color-accent;
+            font-weight: 600;
+            background: rgba($color-accent, 0.05);
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba($color-accent, 0.3);
+        border-radius: 2px;
     }
 }
 

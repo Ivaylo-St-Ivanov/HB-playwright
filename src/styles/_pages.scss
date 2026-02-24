@@ -246,11 +246,20 @@
     }
 }
 
-// Staging Page
+// Staging Page Layout
+.staging-layout {
+    display: flex;
+    max-width: 1800px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: flex-start;
+}
+
+// Staging Page Content
 .staging-page {
     padding: $spacing-md;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex: 1;
+    min-width: 0;
 
     @include mobile {
         padding: $spacing-lg $spacing-md 0 $spacing-md;

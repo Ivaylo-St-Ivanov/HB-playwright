@@ -4,7 +4,8 @@
             "en": "Armenia",
             "bg": "Армения",
             "es": "Armenia",
-            "de": "Armenien"
+            "de": "Armenien",
+            "ru": "Армения"
         },
         "cities": [
             {
@@ -12,7 +13,8 @@
                     "en": "Yerevan",
                     "bg": "Ереван",
                     "es": "Ereván",
-                    "de": "Eriwan"
+                    "de": "Eriwan",
+                    "ru": "Ереван"
                 },
                 "stagings": [
                     {
@@ -20,31 +22,36 @@
                             "en": "The Colonel Bird",
                             "bg": "Полковникът птица",
                             "es": "El Coronel Pájaro",
-                            "de": "Der Oberst und die Vögel"
+                            "de": "Der Oberst und die Vögel",
+                            "ru": "Полковник-птица"
                         },
                         "theater": {
                             "en": "Theatre Hrachia Kaplanyan",
                             "bg": "Theatre Hrachia Kaplanyan",
                             "es": "Theatre Hrachia Kaplanyan",
-                            "de": "Theatre Hrachia Kaplanyan"
+                            "de": "Theatre Hrachia Kaplanyan",
+                            "ru": "Театр Грачья Капланяна"
                         },
                         "premiere": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "director": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "actors": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "images": []
                     }
@@ -57,7 +64,8 @@
             "en": "Australia",
             "bg": "Австралия",
             "es": "Australia",
-            "de": "Australien"
+            "de": "Australien",
+            "ru": "Австралия"
         },
         "cities": [
             {
@@ -65,7 +73,8 @@
                     "en": "Sydney",
                     "bg": "Сидни",
                     "es": "Sídney",
-                    "de": "Sydney"
+                    "de": "Sydney",
+                    "ru": "Сидней"
                 },
                 "stagings": [
                     {
@@ -73,31 +82,36 @@
                             "en": "The Titanic Orchestra",
                             "bg": "Оркестърът на Титаник",
                             "es": "La Orquesta del Titanic",
-                            "de": "Das Orchester der Titanic"
+                            "de": "Das Orchester der Titanic",
+                            "ru": "Оркестр Титаник"
                         },
                         "theater": {
                             "en": "The New Theatre",
                             "bg": "Нов театър",
                             "es": "El Nuevo Teatro",
-                            "de": "Neues Theater"
+                            "de": "Neues Theater",
+                            "ru": "Новый театр"
                         },
                         "premiere": {
                             "en": "16 March 2006",
                             "bg": "16 март 2006",
                             "es": "16 marzo 2006",
-                            "de": "16. März 2006"
+                            "de": "16. März 2006",
+                            "ru": "16 марта 2006"
                         },
                         "director": {
                             "en": "Peter Talmacs",
                             "bg": "Пeтър Талмакс",
                             "es": "Peter Talmacs",
-                            "de": "Peter Talmacs"
+                            "de": "Peter Talmacs",
+                            "ru": "Питер Талмакс"
                         },
                         "actors": {
                             "en": "John Farndale, Alan Faulkner, Kim Knuckey, Jill McKay and Frank McNamara",
                             "bg": "Джон Фарндейл, Алън Фолкнър, Ким Кнуки, Джил МакКай и Франк МакНамара",
                             "es": "John Farndale, Alan Faulkner, Kim Knuckey, Jill McKay and Frank McNamara",
-                            "de": "John Farndale, Alan Faulkner, Kim Knuckey, Jill McKay and Frank McNamara"
+                            "de": "John Farndale, Alan Faulkner, Kim Knuckey, Jill McKay and Frank McNamara",
+                            "ru": "Джон Фарндейл, Алан Фолкнер, Ким Кнуки, Джилл МакКей и Фрэнк МакНамара"
                         },
                         "images": [
                             "http://www.hristoboytchev.com/images/Sidney.gif"
@@ -112,7 +126,8 @@
             "en": "Bulgaria",
             "bg": "България",
             "es": "Bulgaria",
-            "de": "Bulgarien"
+            "de": "Bulgarien",
+            "ru": "Болгария"
         },
         "cities": [
             {
@@ -120,7 +135,8 @@
                     "en": "Sofia",
                     "bg": "София",
                     "es": "Sofia",
-                    "de": "Sofia"
+                    "de": "Sofia",
+                    "ru": "София"
                 },
                 "stagings": [
                     {
@@ -128,31 +144,36 @@
                             "en": "The Colonel & The Bird",
                             "bg": "Полковникът и птицата",
                             "es": "El Coronel y el Pájaro",
-                            "de": "Der Oberst und die Vögel"
+                            "de": "Der Oberst und die Vögel",
+                            "ru": "Полковник и птицы"
                         },
                         "theater": {
                             "en": "Theatre Sofia",
                             "bg": "Театър София",
                             "es": "Theatre Sofia",
-                            "de": "Theatre Sofia"
+                            "de": "Theatre Sofia",
+                            "ru": "Театр София"
                         },
                         "premiere": {
                             "en": "14 May, 2000",
                             "bg": "14 май 2000",
                             "es": "14 de mayo de 2000",
-                            "de": "14. Mai 2000"
+                            "de": "14. Mai 2000",
+                            "ru": "14 мая 2000"
                         },
                         "director": {
                             "en": "Boris Pankin",
                             "bg": "Борис Панкън",
                             "es": "Boris Pankin",
-                            "de": "Boris Pankin"
+                            "de": "Boris Pankin",
+                            "ru": "Борис Панкин"
                         },
                         "actors": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "images": [
                             "http://www.hristoboytchev.com/images/snimki/sofialit.gif",
@@ -166,7 +187,8 @@
                     "en": "Sofia",
                     "bg": "София",
                     "es": "Sofia",
-                    "de": "Sofia"
+                    "de": "Sofia",
+                    "ru": "София"
                 },
                 "stagings": [
                     {
@@ -174,31 +196,36 @@
                             "en": "The Titanic Orchestra",
                             "bg": "Оркестърът на Титаник",
                             "es": "La Orquesta del Titanic",
-                            "de": "Das Orchester der Titanic"
+                            "de": "Das Orchester der Titanic",
+                            "ru": "Оркестр Титаник"
                         },
                         "theater": {
                             "en": "National Youth Theatre",
                             "bg": "Национален младежки театър",
                             "es": "National Youth Theatre",
-                            "de": "National Youth Theatre"
+                            "de": "National Youth Theatre",
+                            "ru": "Национальный молодежный театр"
                         },
                         "premiere": {
                             "en": "14 May, 2002",
                             "bg": "14 май 2002",
                             "es": "14 de mayo de 2002",
-                            "de": "14. Mai 2002"
+                            "de": "14. Mai 2002",
+                            "ru": "14 мая 2002"
                         },
                         "director": {
                             "en": "Plamen Panev",
                             "bg": "Пламен Панев",
                             "es": "Plamen Panev",
-                            "de": "Plamen Panev"
+                            "de": "Plamen Panev",
+                            "ru": "Пламен Панев"
                         },
                         "actors": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "images": [
                             "http://www.hristoboytchev.com/images/snimki/sofia2.jpg"
@@ -211,7 +238,8 @@
                     "en": "Rousse",
                     "bg": "Русе",
                     "es": "Rousse",
-                    "de": "Rousse"
+                    "de": "Rousse",
+                    "ru": "Русе"
                 },
                 "stagings": [
                     {
@@ -219,31 +247,36 @@
                             "en": "The Titanic Orchestra",
                             "bg": "Оркестърът на Титаник",
                             "es": "La Orquesta del Titanic",
-                            "de": "Das Orchester der Titanic"
+                            "de": "Das Orchester der Titanic",
+                            "ru": "Оркестр Титаник"
                         },
                         "theater": {
                             "en": "National Drama Theatre",
                             "bg": "Национален драматичен театър",
                             "es": "National Drama Theatre",
-                            "de": "National Drama Theatre"
+                            "de": "National Drama Theatre",
+                            "ru": "Национальный драматический театр"
                         },
                         "premiere": {
                             "en": "2007",
                             "bg": "2007",
                             "es": "2007",
-                            "de": "2007"
+                            "de": "2007",
+                            "ru": "2007"
                         },
                         "director": {
                             "en": "Plamen Panev",
                             "bg": "Пламен Панев",
                             "es": "Plamen Panev",
-                            "de": "Plamen Panev"
+                            "de": "Plamen Panev",
+                            "ru": "Пламен Панев"
                         },
                         "actors": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "images": [
                             "http://www.hristoboytchev.com/images/snimki/Ruse.jpg"
@@ -258,7 +291,8 @@
             "en": "France",
             "bg": "Франция",
             "es": "Francia",
-            "de": "Frankreich"
+            "de": "Frankreich",
+            "ru": "Франция"
         },
         "cities": [
             {
@@ -266,7 +300,8 @@
                     "en": "Paris",
                     "bg": "Париж",
                     "es": "París",
-                    "de": "Paris"
+                    "de": "Paris",
+                    "ru": "Париж"
                 },
                 "stagings": [
                     {
@@ -274,31 +309,36 @@
                             "en": "The Colonel Bird",
                             "bg": "Полковникът птица",
                             "es": "El Coronel Pájaro",
-                            "de": "Der Oberst und die Vögel"
+                            "de": "Der Oberst und die Vögel",
+                            "ru": "Полковник-птица"
                         },
                         "theater": {
                             "en": "Theatre de la Commune d'Aubervilliers",
                             "bg": "Театър на Комуната на Обервилие",
                             "es": "Theatre de la Commune d'Aubervilliers",
-                            "de": "Theatre de la Commune d'Aubervilliers"
+                            "de": "Theatre de la Commune d'Aubervilliers",
+                            "ru": "Театр де ла Коммюн д'Обервилье"
                         },
                         "premiere": {
                             "en": "1999",
                             "bg": "1999",
                             "es": "1999",
-                            "de": "1999"
+                            "de": "1999",
+                            "ru": "1999"
                         },
                         "director": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "actors": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "images": []
                     }
@@ -311,7 +351,8 @@
             "en": "Russia",
             "bg": "Русия",
             "es": "Rusia",
-            "de": "Russland"
+            "de": "Russland",
+            "ru": "Россия"
         },
         "cities": [
             {
@@ -319,7 +360,8 @@
                     "en": "Samara",
                     "bg": "Самара",
                     "es": "Samara",
-                    "de": "Samara"
+                    "de": "Samara",
+                    "ru": "Самара"
                 },
                 "stagings": [
                     {
@@ -327,31 +369,36 @@
                             "en": "The Colonel Bird",
                             "bg": "Полковникът птица",
                             "es": "El Coronel Pájaro",
-                            "de": "Der Oberst und die Vögel"
+                            "de": "Der Oberst und die Vögel",
+                            "ru": "Полковник-птица"
                         },
                         "theater": {
                             "en": "Samara Academic Drama Theatre",
                             "bg": "Самарски академичен драматичен театър",
                             "es": "Teatro Académico de Samara",
-                            "de": "Akademisches Theater Samara"
+                            "de": "Akademisches Theater Samara",
+                            "ru": "Самарский академический театр драмы"
                         },
                         "premiere": {
                             "en": "2009",
                             "bg": "2009",
                             "es": "2009",
-                            "de": "2009"
+                            "de": "2009",
+                            "ru": "2009"
                         },
                         "director": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "actors": {
                             "en": "",
                             "bg": "",
                             "es": "",
-                            "de": ""
+                            "de": "",
+                            "ru": ""
                         },
                         "images": []
                     }
