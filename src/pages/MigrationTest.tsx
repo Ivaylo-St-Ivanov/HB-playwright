@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { migratePlaysToBack4App, clearAllPlays } from '../scripts/migratePlays';
+import { migrateBiographyToBack4App, clearAllBiography } from '../scripts/migrateBiography';
 import './MigrationTest.css';
 
 /**
@@ -11,6 +12,7 @@ export const MigrationTest = () => {
     const [isRunning, setIsRunning] = useState(false);
     const [result, setResult] = useState<any>(null);
     const [error, setError] = useState<string | null>(null);
+    const [migrationType, setMigrationType] = useState<'plays' | 'biography'>('plays');
 
     const handleMigrate = async () => {
         setIsRunning(true);
@@ -18,7 +20,9 @@ export const MigrationTest = () => {
         setResult(null);
 
         try {
-            const migrationResult = await migratePlaysToBack4App();
+            const migrationResult = migrationType === 'plays'
+                ? await migratePlaysToBack4App()
+                : await migrateBiographyToBack4App();
             setResult(migrationResult);
         } catch (err: any) {
             setError(err.message || 'Migration failed');
@@ -29,7 +33,8 @@ export const MigrationTest = () => {
     };
 
     const handleClear = async () => {
-        if (!confirm('Сигурен ли си, че искаш да изтриеш всички пиеси от Back4App?')) {
+        const typeName = migrationType === 'plays' ? 'пиеси' : 'биография';
+        if (!confirm(`Сигурен ли си, че искаш да изтриеш всички ${typeName} от Back4App?`)) {
             return;
         }
 
@@ -37,8 +42,10 @@ export const MigrationTest = () => {
         setError(null);
 
         try {
-            const count = await clearAllPlays();
-            alert(`Изтрити ${count} пиеси`);
+            const count = migrationType === 'plays'
+                ? await clearAllPlays()
+                : await clearAllBiography();
+            alert(`Изтрити ${count} ${migrationType === 'plays' ? 'пиеси' : 'записа от биографията'}`);
             setResult(null);
         } catch (err: any) {
             setError(err.message || 'Clear failed');
@@ -50,11 +57,36 @@ export const MigrationTest = () => {
 
     return (
         <div className="migration-test">
-            <h1>🔄 Миграция на пиеси към Back4App</h1>
+            <h1>🔄 Миграция към Back4App</h1>
 
             <div className="migration-info">
-                <p>Тази страница ще прехвърли всички пиеси от JSON файла в Back4App базата данни.</p>
-                <p><strong>Важно:</strong> Изпълни миграцията само веднъж!</p>
+                <p>Тази страница ще прехвърли данни от JSON файла в Back4App базата данни.</p>
+                <p><strong>Важно:</strong> Изпълни миграцията само по веднъж за всеки тип!</p>
+            </div>
+
+            <div style={{ marginBottom: '20px', display: 'flex', gap: '20px', justifyContent: 'center' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}>
+                    <input
+                        type="radio"
+                        name="migrationType"
+                        value="plays"
+                        checked={migrationType === 'plays'}
+                        onChange={() => setMigrationType('plays')}
+                        disabled={isRunning}
+                    />
+                    Пиеси (Plays)
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}>
+                    <input
+                        type="radio"
+                        name="migrationType"
+                        value="biography"
+                        checked={migrationType === 'biography'}
+                        onChange={() => setMigrationType('biography')}
+                        disabled={isRunning}
+                    />
+                    Биография (Biography)
+                </label>
             </div>
 
             <div className="migration-buttons">
@@ -71,7 +103,7 @@ export const MigrationTest = () => {
                     disabled={isRunning}
                     className="btn-clear"
                 >
-                    🗑️ Изчисти всички пиеси
+                    🗑️ Изчисти всички ({migrationType === 'plays' ? 'пиеси' : 'биография'})
                 </button>
             </div>
 

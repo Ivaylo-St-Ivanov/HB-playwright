@@ -1,10 +1,64 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { useLanguage } from '../context/LanguageContext';
+import { fetchBiographyEvents, fetchBiographyInfo } from '../services/parseService';
+
+import LoadingSpinner from '../components/LoadingSpinner';
+import ErrorMessage from '../components/ErrorMessage';
 
 const Biography: React.FC = () => {
-    const { content } = useLanguage();
+    const { language, content } = useLanguage();
+
+    const [events, setEvents] = useState<any[]>([]);
+    const [additionalInfo, setAdditionalInfo] = useState<any>(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+
+    useEffect(() => {
+        const loadBiography = async () => {
+            try {
+                setLoading(true);
+                const [eventsData, infoData] = await Promise.all([
+                    fetchBiographyEvents(),
+                    fetchBiographyInfo()
+                ]);
+
+                setEvents(eventsData);
+                setAdditionalInfo(infoData);
+                setError(null);
+            } catch (err: any) {
+                console.error('Error loading biography:', err);
+                setError('LOAD_ERROR');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        loadBiography();
+    }, []);
+
+    // Helper to get text based on current language
+    const getLocalizedText = (item: any, prefix = 'text_') => {
+        if (!item) return '';
+        return item[`${prefix}${language}`] || item[`${prefix}en`] || '';
+    };
+
+    if (loading) {
+        return (
+            <div className="container">
+                <LoadingSpinner />
+            </div>
+        );
+    }
+
+    if (error) {
+        return (
+            <div className="container">
+                <ErrorMessage />
+            </div>
+        );
+    }
 
     return (
         <motion.div
@@ -21,9 +75,9 @@ const Biography: React.FC = () => {
             <h1>{content.biography.title}</h1>
 
             <ul className="biography-page__timeline">
-                {content.biography.events.map((event, index) => (
+                {events.map((event, index) => (
                     <motion.li
-                        key={index}
+                        key={event.id || index}
                         className="biography-page__item"
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -31,13 +85,13 @@ const Biography: React.FC = () => {
                         transition={{ duration: 0.8, delay: index * 0.05 }}
                     >
                         <span className="biography-page__year">{event.year}</span>
-                        <span className="biography-page__text">{event.text}</span>
+                        <span className="biography-page__text">{getLocalizedText(event)}</span>
                     </motion.li>
                 ))}
             </ul>
 
             <div style={{ marginTop: '2rem' }}>
-                <p className="biography-page__text">{content.biography.additionalInfo}</p>
+                <p className="biography-page__text">{getLocalizedText(additionalInfo)}</p>
             </div>
         </motion.div>
     );

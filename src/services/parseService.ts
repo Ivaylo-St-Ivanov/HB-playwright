@@ -57,3 +57,46 @@ export const createPlay = async (playData: any) => {
         throw error;
     }
 };
+
+/**
+ * Fetch all biography events from Back4App
+ */
+export const fetchBiographyEvents = async () => {
+    const BiographyEvent = Parse.Object.extend('BiographyEvent');
+    const query = new Parse.Query(BiographyEvent);
+    query.ascending('order'); // Ensure they are sorted chronologically
+
+    try {
+        const results = await query.find();
+        return results.map(event => ({
+            id: event.id,
+            ...event.toJSON()
+        }));
+    } catch (error) {
+        console.error('Error fetching biography events:', error);
+        throw error;
+    }
+};
+
+/**
+ * Fetch the additional biography info from Back4App
+ */
+export const fetchBiographyInfo = async () => {
+    const BiographyInfo = Parse.Object.extend('BiographyInfo');
+    const query = new Parse.Query(BiographyInfo);
+
+    try {
+        // There should be only one document
+        const results = await query.find();
+        if (results.length > 0) {
+            return {
+                id: results[0].id,
+                ...results[0].toJSON()
+            };
+        }
+        return null; // Return null if not found
+    } catch (error) {
+        console.error('Error fetching biography info:', error);
+        throw error;
+    }
+};
